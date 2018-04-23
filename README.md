@@ -90,7 +90,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     a) Campo endereço: em nosso projeto optamos por um campo multivalorado e composto, pois a empresa 
     pode possuir para cada departamento mais de uma localização... 
     b) justifique! 
-Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma reserva de vaga, deve pagar, no momento que a faz, o valor de uma hora de utilização do estacionamento.
+Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma reserva de vaga, deve pagar, no momento que a faz, o valor de uma hora de utilização do estacionamento. O que garante a utilização da vaga também por uma hora para o motorista.
 
 >## Marco de Entrega 02 em: (23/04/2018)<br>
 #### 5.3 DESCRIÇÃO DOS DADOS 
