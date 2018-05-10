@@ -71,7 +71,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         * O protótipo deve possui no mínimo duas relações N para N
         * o mínimo de entidades do modelo conceitual será igual a 5
         
-![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/modConceitual.png?raw=true "Modelo Conceitual")
+![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/modConceitual_2.png?raw=true "Modelo Conceitual")
     
     B) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
     C) QUALIDADE 
@@ -82,8 +82,9 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         
     
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
-    [Grupo02]: [Nomes dos que participaram na avaliação]
+    Grupo RFID/EasyMarket]: [Antônio, Jennifer, Joel, Larissa]
+    [Grupo02]: Solicitamos ao grupo da Casa Inteligente e ao Grupo da Vaga (nossos clientes). Estamos aguardando o retorno de um deles.
+               
 
 #### 5.2 DECISÕES DE PROJETO
         
