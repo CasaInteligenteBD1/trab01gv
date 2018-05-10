@@ -82,7 +82,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         
     
 #### 5.1 Validação do Modelo Conceitual
-    Grupo RFID/EasyMarket]: [Antônio, Jennifer, Joel, Larissa]
+    Grupo RFID/EasyMarket: Antônio, Jennifer, Joel, Larissa
     [Grupo02]: Solicitamos ao grupo da Casa Inteligente e ao Grupo da Vaga (nossos clientes). Estamos aguardando o retorno de um deles.
                
 
