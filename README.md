@@ -28,12 +28,6 @@ Este documento contém a especificação do projeto do banco de dados estac<b>I<
 
 ### 3.MINI-MUNDO Novo<br>
 
-Descrever o mini-mundo! (Não deve ser maior do que 30 linhas) <br>
-Entrevista com o usuário e identificação dos requisitos.<br>
-Descrição textual das regras de negócio definidas como um  subconjunto do mundo real 
-cujos elementos são propriedades que desejamos incluir, processar, armazenar, 
-gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
-
 > 
 O Sistema proposto ao usuário apresenta as seguintes informações .Do cliente serão armazenados o nome,senha,e-mail,CPF,numero de telefone e placa do veiculo.Das formas de pagamentos serão armazenados numero de cartão de crédito, conta de PayPal e créditos depositados. O usuário com o aplicativo pode de qualquer lugar efetuar a reserva de um estacionamento caso ele já não tenha sido reservado por outro, caso não tenha sido reservado o mesmo poderá efetuar uma reserva com base nos seus dados já cadastrados, escolhendo assim seu método de pagamento mais apropriado e sendo informado do valor a ser pago por essa vaga.
 O sistema proposto ao administrador apresenta as seguintes informações: Da empresa será armazenada o nome,e-mail, senha e CNPJ, Dos estacionamentos serão armazenados o Local e código da vaga, o administrador poderá adicionar o remover qualquer estacionamento e alterar o numero de vagas assim que desejar, podendo alterar também localidades e lugares pelo mapa.
@@ -41,7 +35,7 @@ O sistema proposto ao administrador apresenta as seguintes informações: Da emp
 
 Sugestão: https://balsamiq.com/products/mockups/<br>
 
-![Alt text](https://github.com/discipbd1/trab01/blob/master/balsamiq.png?raw=true "Title")
+![Protótipo EstacIonA](https://github.com/GrupoDaVaga/trab01/blob/master/arquivos/prototipoTelasEstaciona.pdf?raw=true)<br>
 
 #### 4.1 TABELA DE DADOS DO SISTEMA:
 ![Tabela de dados v0.1](https://github.com/GrupoDaVaga/trab01/blob/master/arquivos/4_1_tabela_de_dados_estacIonA.xlsx?raw=true)<br>
