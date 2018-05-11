@@ -179,7 +179,7 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
 <b>-valor:</b> campo que armazena o valor do pagamento.<br>
 
 <b>Permanencia_Vaga:</b> tabela que armazena o tempo que o motorista permaneceu no estacionamento.<br>
-<b>-horaSaida:</br> campo que armazena o horario que o motorista saiu do estacionamento.<br>
+<b>-horaSaida:</b> campo que armazena o horario que o motorista saiu do estacionamento.<br>
 
 <b>Pagamento_Reserva:</b> tabela que armazena o pagamento que o motorista realizou no momento da reserva.<br>
 <b>-valor:</b> campo que armazena o valor do pagamento.<br>
