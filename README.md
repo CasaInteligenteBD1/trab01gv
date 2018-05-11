@@ -135,7 +135,7 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
 <b>-ano:</b> campo que identifica o ano do veículo;<br>
 <b>-placa:</b> campo que identifica a placa do veículo;<br>
 
-<b>Marca_Modelo:</b> tabela que armazena as marcas e os modelos dos veículos.
+<b>Marca_Modelo:</b> tabela que armazena as marcas e os modelos dos veículos.<br>
 <b>-marca:</b> campo que armazena a marca do veículo;<br>
 <b>-modelo:</b> campo que armazena o modelo do veículo;<br>
 <b>-idMarcaModelo:</b> campo que identifica a marca e o modelo do veículo.<br>
@@ -155,15 +155,15 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
 <b>-cep:</b> campo que armazena o cep do estacionamento cadastrado;<br>
 <b>-rua:</b> campo que armazena a rua do estacionamento cadastrado;<br>
 
-<b>Bairro:</b> tabela que armazena todos os bairros dos estacionamentos cadastrados.
+<b>Bairro:</b> tabela que armazena todos os bairros dos estacionamentos cadastrados.<br>
 <b>-idBairro:</b> campo que identifica o bairro cadastrado;<br>
 <b>-bairro:</b> campo que armazena o nome do bairro cadastrado.<br>
 
-<b>Cidade:</b> tabela que armazena todas as cidades dos estacionamentos cadastrados.
+<b>Cidade:</b> tabela que armazena todas as cidades dos estacionamentos cadastrados.<br>
 <b>-idCidade:</b> campo que identifica a cidade cadastrada;<br>
 <b>-cidade:</b> campo que armazena o nome da cidade cadastrada.<br>
 
-<b>Estado:</b> tabela que armazena todos os estados dos estacionamentos cadastrados.
+<b>Estado:</b> tabela que armazena todos os estados dos estacionamentos cadastrados.<br>
 <b>-idEstado:</b> campo que identifica o estado cadastrado;<br>
 <b>-estado:</b> campo que armazena o nome do estado cadastrado.<br>
 
