@@ -35,7 +35,7 @@ O sistema proposto ao administrador apresenta as seguintes informações: Da emp
 
 Sugestão: https://balsamiq.com/products/mockups/<br>
 
-![Protótipo EstacIonA](https://github.com/GrupoDaVaga/trab01/blob/master/arquivos/prototipoTelasEstaciona.pdf?raw=true)<br>
+![Protótipo EstacIonA](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/prototipoTelasEstaciona.pdf)<br>
 
 #### 4.1 TABELA DE DADOS DO SISTEMA:
 ![Tabela de dados v0.1](https://github.com/GrupoDaVaga/trab01/blob/master/arquivos/4_1_tabela_de_dados_estacIonA.xlsx?raw=true)<br>
