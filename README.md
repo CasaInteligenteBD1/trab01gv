@@ -67,7 +67,9 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         
 ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/modConceitual_2.png?raw=true "Modelo Conceitual")
     
-    B) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
+    B) NOTACAO UML: Diagrama de classes
+    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Diagrama_Classe_Estaciona_modificado.png?raw=true "Diagrama de Classes")
+    
     C) QUALIDADE 
         Garantir que a semântica dos atributos seja clara no esquema
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
