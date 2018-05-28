@@ -28,9 +28,22 @@ Este documento contém a especificação do projeto do banco de dados estac<b>I<
 
 ### 3.MINI-MUNDO Novo<br>
 
-> 
-O Sistema proposto ao usuário apresenta as seguintes informações .Do cliente serão armazenados o nome,senha,e-mail,CPF,numero de telefone e placa do veiculo.Das formas de pagamentos serão armazenados numero de cartão de crédito, conta de PayPal e créditos depositados. O usuário com o aplicativo pode de qualquer lugar efetuar a reserva de um estacionamento caso ele já não tenha sido reservado por outro, caso não tenha sido reservado o mesmo poderá efetuar uma reserva com base nos seus dados já cadastrados, escolhendo assim seu método de pagamento mais apropriado e sendo informado do valor a ser pago por essa vaga.
-O sistema proposto ao administrador apresenta as seguintes informações: Da empresa será armazenada o nome,e-mail, senha e CNPJ, Dos estacionamentos serão armazenados o Local e código da vaga, o administrador poderá adicionar o remover qualquer estacionamento e alterar o numero de vagas assim que desejar, podendo alterar também localidades e lugares pelo mapa.
+O estacIonA é um sistema desenvolvido para atender empresas de estacionamento privadas, localizadas em grandes centros urbanos. O sistema é feito para funcionar em conjunto com sensores, que possibilitarão identificar as placas dos veículos e ajudar na atualização da visualização das vagas livres/ocupadas no sistema. Sua principal função é permitir que os motoristas reservem vagas de estacionamento para seus veículos de maneira remota nesses estacionamentos, que devem estar cadastrados no estacIonA.
+
+Do motorista, será armazenado o número da sua CNH e seu CPF. O motorista poderá reservar vagas, desde que tenha créditos em sua carteira digital (também responsável por armazenar informações de recargas). Existirão três maneiras de um motorista acrescentar créditos a sua carteira, payPal, cartão de crédito ou débito. Para cada uma dessas formas de pagamentos serão armazenados, respectivamente, o nome da conta payPal, e o número do cartão para as duas últimas.
+ 
+Um estacionamento possui um endereço, e nele trabalha dois tipos de funcionários, o administrador e o guarda. E quanto às informações específicas de cada estacionamento, serão armazenadas a quantidade de vagas, o valor da hora de utilização de uma vaga e sua localização para o GPS (latitude e longitude).
+ 
+Sobre a vaga, é importante saber o status dela, ou seja,  se está reservada ou não. Também é importante saber qual estacionamento ela pertence, o número do andar, o seu número identificador, e sua localização para o GPS (latitude e longitude).
+
+Para realizar uma reserva, o motorista ter pelo menos um veículo cadastrado, então ele escolhe pelo GPS um estacionamento que deseja utilizar, visualiza as vagas livres e ocupadas deste estacionamento, escolhe uma das vagas livres, informa qual será seu horário de entrada na vaga e confirma o pagamento, para isso o motorista já deve ter créditos suficientes em sua carteira digital no aplicativo. Ao sair da vaga o sistema calcula o valor total que o motorista terá que pagar, e então o sistema descontará dos seus créditos. O motorista com o aplicativo pode, de qualquer lugar, efetuar a reserva de uma vaga de estacionamento que estiver livre (que não está em uso ou não foi reservada).
+
+Um motorista poderá financiar seus créditos em sua carteira digital no aplicativo utilizando cartão de de crédito ou débito ou payPal.
+
+A reserva garante que um motorista garanta sua utilização de uma determinada vaga por uma hora, a contar a partir da hora que ele informou ao solicitar a reserva. O motorista, antes de se retirar do estacionamento, deverá pagar pelas horas excedentes à primeira de utilização da vaga.
+
+Um estacionamento poderá ser gerenciado por um ou mais funcionários administradores, na qual eles poderão, para os estacionamentos que cada um deles gerencia, cadastrar, editar e excluir vagas e cadastrar e editar estacionamentos. saber quais vagas estão ocupadas ou livres de forma visual. O guarda poderá apenas visualizar as informações das vagas(local, número, etc), e se a vaga está ocupada ou não.
+
 <br>
 
 Sugestão: https://balsamiq.com/products/mockups/<br>
