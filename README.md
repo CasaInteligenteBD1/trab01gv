@@ -17,13 +17,11 @@ Caicke Carvalho de Pinheiro: caicke@gmail.com<br>
 Emanuel Rampinelli: emanuel_rampinelli@hotmail.com<br>
 
 
-### 2.INTRODUÇÃO E MOTIVAÇAO<br>
-Este documento contém a especificação do projeto do banco de dados estac<b>I</b>on<b>A</b>
-<br>e motivação da escolha realizada. <br>
+### 2. INTRODUÇÃO E MOTIVAÇAO<br>
 
-> A empresa "OriginsIA Soluções Tecnologicas" visa colaborar com desenvolvimento de projetos para uma sociedade melhor. Sabendo-se dos desafios para se encontrar vagas em em grandes cidades e grandes centros, ficamos motivados com o desenvolvimento deste sistema "estacIonA". O Sistema "estacIonA" tem como objetivo trazer facilidade e agilizade daqueles que precisam estacionar seus carros em locais cuja as vagas são escassas. Para realizar suas operações adequadamente e empresa necessita que sistema que armazene informações relativas aos estacionamentos, além de também armazenar dados sobre as vagas e as informações dos usuarios. 
+O projeto estacIonA vem com a ideia de facilitar a vida das pessoas que precisam estacionar em grandes centros urbanos. Por meio de um sistema, será possível pesquisar e reservar vagas de estacionamento disponíveis, na visão do motorista; efetuar cadastros e visualizar relatórios, na visão empresarial.
 
-> O sistema irá utilizar sensores de presença para saber onde uma vaga está disponível e com a ajuda de câmeras verificará se o carro na vaga é a da pessoa que a reservou. Todo o sistema de reserva e pagamento será feito por um aplicativo que utilizando o sensor de gps mostrará um mapa em tempo real do local onde se encontra o carro e o guiará até a vaga correta. O banco de dados consistirá em dados do cliente como nome, email, cpf/cnpj, número da placa, número do cartão de crédito, além dos dados do estabelecimento e dos dados coletados pelos sensores. <br>
+A engrenagem que nos move é a grande necessidade dos motoristas em estacionar seus carros nos grandes centros, somada a grande concorrência das vagas, que por sua vez geram uma perda de tempo e estresse aos motoristas. Essa situação nos dá uma oportunidade de negócio junto aos estacionamentos privativos, na qual um cliente poderá pagar pela reserva de uma vaga, garantindo-a e evitando possíveis transtornos para se achar uma vaga posteriormente, com a comodidade de realizar essa tarefa pelo seu smartphone.
  
 
 ### 3.MINI-MUNDO Novo<br>
