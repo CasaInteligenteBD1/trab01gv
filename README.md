@@ -97,96 +97,82 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
 >## Marco de Entrega 02 em: (23/04/2018)<br>
 #### 5.3 DESCRIÇÃO DOS DADOS 
     
-
 <b>Pessoa:</b> tabela que armazena as informações do cliente.<br>
-<b>-id:</b> campo que identifica a pessoa;<br>
-<b>-nome:</b> campo que armazena o nome completo da pessoa;<br>
-<b>-email:</b> campo que armazena o email que será usado como login da pessoa;<br>
-<b>-senha:</b> campo que armazena a senha (em md5) da pessoa.<br>
+<b>id:</b> campo que identifica a pessoa;<br>
+<b>nome:</b> campo que armazena o nome completo da pessoa;<br>
+<b>senha:</b> campo que armazena a senha (em md5) da pessoa.<br>
 
 <b>Pessoa_Juridica:</b> tabela que armazena as informações somente de pessoas jurídicas.<br>
-<b>-cnpj:</b> campo que armazena o cnpj da pessoa jurídica.<br>
+<b>cnpj:</b> campo que armazena o cnpj da pessoa jurídica.<br>
 
 <b>Pessoa_Fisica:</b> tabela que armazena as informações somente de pessoas físicas.<br>
-<b>-cpf:</b> campo que armazena o cpf da pessoa física.<br>
+<b>cpf:</b> campo que armazena o cpf da pessoa física.<br>
 
-<b>Funcionário:</b> tabela que armazena as informações dos funcionários de cada empresa.<br>
-<b>-cargo:</b> campo que identifica o cargo do funcionário (administrador ou guarda)<br>
+<b>Funcionario:</b> tabela que armazena as informações dos funcionários de cada empresa.<br>
+<b>matricula:</b> campo que identifica o número da matrícula do funcionário.<br>
+<b>dataAdmissao:</b> campo que armazena a data que o funcionário foi contratado.<br>
+<b>dataDemissao:</b> campo que armazena a data que o funcionário foi demitido.<br>
 
-<b>Empresa:</b> tabela que armazena as informações das empresas cadastradas.<br>
+<b>Reserva:</b> tabela que armazena as reservas realizadas no sistema.<br>
+<b>id:</b> campo que identifica a reserva cadastrada;<br>
+<b>horaReserva:</b> campo que identifica o horário da reserva cadastrada;<br>
+<b>dataReserva:</b> campo que identifica a data da reserva cadastrada;<br>
 
 <b>Estacionamento:</b> tabela que armazena as informações do estacionamento.<br>
-<b>-idEstaciona:</b> campo que identifica o estacionamento;<br>
-<b>-nomeEstaciona:</b> campo que armazena o nome do estacionamento (para visualização no aplicativo;<br>
-<b>-qntVagas:</b> campo que identifica a quantidade de vagas disponíveis no momento;<br>
-<b>-valorPorHora:</b> campo que armazena o valor/hora do estacionamento;<br>
-<b>-latitudeEstaciona:</b> campo que armazena a latitude do estacionamento;<br>
-<b>-longitudeEstaciona:</b> campo que armazena a longitude do estacionamento.<br>
+<b>id:</b> campo que identifica o estacionamento;<br>
+<b>nome:</b> campo que armazena o nome do estacionamento (para visualização no aplicativo;<br>
+<b>qntVagas:</b> campo que identifica a quantidade de vagas disponíveis no momento;<br>
+<b>valorHora:</b> campo que armazena o valor/hora do estacionamento;<br>
+<b>latitude:</b> campo que armazena a latitude do estacionamento;<br>
+<b>longitude:</b> campo que armazena a longitude do estacionamento.<br>
 
 <b>Vaga:</b> tabela que armazena informações da vaga de um estacionamento.<br>
-<b>-id:</b> campo que identifica a vaga em questão;<br>
-<b>-andar:</b> campo que identifica o andar da vaga;<br>
-<b>-numeroVaga:</b> campo que armazena o número da vaga;<br>
-<b>-latitudeVaga:</b> campo que armazena a latitude da vaga;<br>
-<b>-longitudeVaga:</b> campo que armazena a longitude da vaga.<br>
+<b>id:</b> campo que identifica a vaga em questão;<br>
+<b>andar:</b> campo que identifica o andar da vaga;<br>
+<b>numero:</b> campo que armazena o número da vaga;<br>
+<b>status:</b> campo que armazena o status da vaga (livre ou ocupada);<br>
+<b>latitude:</b> campo que armazena a latitude da vaga;<br>
+<b>longitude:</b> campo que armazena a longitude da vaga.<br>
 
 <b>Veículo:</b> tabela que armazena as informações do veículo.<br>
-<b>-idMarcaModelo:</b> campo que identifica o veículo;<br>
-<b>-ano:</b> campo que identifica o ano do veículo;<br>
-<b>-placa:</b> campo que identifica a placa do veículo;<br>
-
-<b>Marca_Modelo:</b> tabela que armazena as marcas e os modelos dos veículos.<br>
-<b>-marca:</b> campo que armazena a marca do veículo;<br>
-<b>-modelo:</b> campo que armazena o modelo do veículo;<br>
-<b>-idMarcaModelo:</b> campo que identifica a marca e o modelo do veículo.<br>
+<b>modelo:</b> campo que identifica o modelo do veículo;<br>
+<b>marca:</b> campo que identifica a marca do veículo;<br>
+<b>ano:</b> campo que identifica o ano do veículo;<br>
+<b>placa:</b> campo que identifica a placa do veículo;<br>
+<b>nome:</b> campo que identifica o nome do veículo;<br>
 
 <b>Motorista:</b> tabela que armazena as informações dos motoristas.<br>
-<b>-cpf:</b> campo que armazena o cpf dos motoristas;<br>
-<b>-creditos:</b> campo que armazena os créditos do motorista;<br>
-<b>-cnh:</b> campo que armazena o número da CNH do motorista.<br>
+<b>creditos:</b> campo que armazena os créditos do motorista;<br>
+<b>cnh:</b> campo que armazena o número da CNH do motorista.<br>
 
-<b>Sensor:</b> tabela que armazena as informações dos sensores.<br>
-<b>-idSensor:</b> campo que identifica o sensor cadastrado;<br>
-<b>-tipoSensor:</b> campo que armazena o tipo do sensor cadastrado;<br>
-<b>-descricaoSensor:</b> campo que descreve o funcionamento do sensor cadastrado.<br>
+<b>Entrada_saida:</b> tabela que armazena os horários de entrada e saída dos veículos no estacionamento.<br>
+<b>id:</b> campo que identifica os horários cadastrados;<br>
+<b>horaChegada:</b> campo que identifica o horário de chegada do veículo;<br>
+<b>horaSaida:</b> campo que identifica o horário de saída do veículo;<br>
+<b>dataEntrada:</b> campo que identifica a data na chegada do veículo;<br>
+<b>dataSaida:</b> campo que identifica a data na saída do veículo;<br>
 
 <b>Endereco:</b> tabela que armazena os endereços dos estacionamentos cadastrados.<br>
-<b>-idEstaciona:</b> campo que identifica de qual estacionamento o endereço se refere;<br>
-<b>-cep:</b> campo que armazena o cep do estacionamento cadastrado;<br>
-<b>-rua:</b> campo que armazena a rua do estacionamento cadastrado;<br>
+<b>id:</b> campo que identifica de qual estacionamento o endereço se refere;<br>
+<b>cep:</b> campo que armazena o cep do estacionamento cadastrado;<br>
+<b>rua:</b> campo que armazena a rua do estacionamento cadastrado;<br>
+<b>complemento:</b> campo que armazena o complemento do endereço;<br>
 
-<b>Bairro:</b> tabela que armazena todos os bairros dos estacionamentos cadastrados.<br>
-<b>-idBairro:</b> campo que identifica o bairro cadastrado;<br>
-<b>-bairro:</b> campo que armazena o nome do bairro cadastrado.<br>
+<b>Bairro:</b> tabela que armazena todos os bairros dos estacionamentos cadastrados.
+<b>id:</b> campo que identifica o bairro cadastrado;<br>
+<b>nome:</b> campo que armazena o nome do bairro cadastrado.<br>
+<b>Cidade:</b> tabela que armazena todas as cidades dos estacionamentos cadastrados.
+<b>id:</b> campo que identifica a cidade cadastrada;<br>
+<b>nome:</b> campo que armazena o nome da cidade cadastrada.<br>
+<b>Estado:</b> tabela que armazena todos os estados dos estacionamentos cadastrados.
+<b>id:</b> campo que identifica o estado cadastrado;<br>
+<b>nome:</b> campo que armazena o nome do estado cadastrado.<br>
 
-<b>Cidade:</b> tabela que armazena todas as cidades dos estacionamentos cadastrados.<br>
-<b>-idCidade:</b> campo que identifica a cidade cadastrada;<br>
-<b>-cidade:</b> campo que armazena o nome da cidade cadastrada.<br>
-
-<b>Estado:</b> tabela que armazena todos os estados dos estacionamentos cadastrados.<br>
-<b>-idEstado:</b> campo que identifica o estado cadastrado;<br>
-<b>-estado:</b> campo que armazena o nome do estado cadastrado.<br>
-
-<b>Contato:</b> tabela que armazena os contatos dos clientes cadastradas.<br>
-<b>-id:</b> campo que identifica o contato que foi armazenado.<br>
-<b>-descricao:</b> campo que descreve o contato (3333-3333, email@gmail.com, etc).<br>
-
-<b>Tipo_Contato:</b> tabela que mostra os tipos de contatos existentes no banco.<br>
-<b>-cod:</b> campo que identifica o tipo de contato;<br>
-<b>-descricao: </b> campo que descreve o tipo de contato (telefone, celular, site pessoal).<br>
-
-<b>Pagamento_Estacionamento:</b> tabela que armazena os pagamentos efetuados ao sair do estacionamento (pagamento total).<br>
-<b>-valor:</b> campo que armazena o valor do pagamento.<br>
-
-<b>Permanencia_Vaga:</b> tabela que armazena o tempo que o motorista permaneceu no estacionamento.<br>
-<b>-horaSaida:</b> campo que armazena o horario que o motorista saiu do estacionamento.<br>
-
-<b>Pagamento_Reserva:</b> tabela que armazena o pagamento que o motorista realizou no momento da reserva.<br>
-<b>-valor:</b> campo que armazena o valor do pagamento.<br>
-
-<b>Tipo_Pagamento:</b> tabela que armazena os tipos de pagamento disponíveis no sistema.<br>
-<b>-cod:</b> campo que identifica o tipo de pagamento
-<b>-descricao:</b> campo que exibe a forma de pagamento (cartão de crédito, paypal).<br>
+<b>Contato:</b> tabela que armazena os contatos dos clientes cadastrados.<br>
+<b>id:</b> campo que identifica o contato que foi armazenado;<br>
+<b>telefone1:</b> campo que armazena o telefone principal de contato;<br>
+<b>telefone2:</b> campo que armazena o telefone secundário de contato;<br>
+<b>email:</b> campo que armazena o email da pessoa;<br>
 
 
 ### 6	MODELO LÓGICO<br>
