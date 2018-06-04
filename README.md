@@ -97,7 +97,7 @@ Um estacionamento poderá ser gerenciado por um ou mais funcionários administra
 
 <b>Endereço:</b> decompomos o “ENDERECO” em  campos "estado", "cidade", "bairro", para seguir as regras de normalização.<br>
 
-<b>Pagamento:</b> dividimos o pagamento em dois momentos diferentes. Um é realizado logo após a reserva da vaga (“PAGAMENTO_RESERVA”) e o outro é realizado após sair do estacionamento, caso ele prmaneça mais tempo do que ele agendou (“PAGAMENTO_ESTACIONAMENTO”). Por exemplo, um cliente reservou uma vaga de 10:00 às 11:00, porém ele saiu somente às 14:00. Logo, para evitarmos conflito, o pagamento será dividido em duas etapas.<br>
+<b>Pagamento:</b> dividimos o pagamento em dois momentos diferentes. Um é realizado logo após a reserva da vaga (“PAGAMENTO_RESERVA”) e o outro é realizado após sair do estacionamento, caso ele permaneça mais tempo do que ele agendou (“PAGAMENTO_ESTACIONAMENTO”). Por exemplo, um cliente reservou uma vaga de 10:00 às 11:00, porém ele saiu somente às 14:00. Logo, para evitarmos conflito, o pagamento será dividido em duas etapas.<br>
 
 <b>Funcionário:</b> No nosso sistema, existem dois cargos de funcionários: o de administrador do estacionamento da empresa, que possui poder de editar/cadastrar/excluir um determinado estacionamento e o de guarda, que só visualiza as vagas disponíveis. Portanto, utilizamos uma tabela “FUNCIONARIO”, com o campo “cargo”.<br>
 
@@ -192,8 +192,8 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
 ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/modLogico.png?raw=truee "Modelo Lógico")
 
 ### 7	MODELO FÍSICO<br>
-        a) inclusão das instruções de criacão das estruturas DDL 
-        (criação de tabelas, alterações, etc..)          
+
+![Modelo Fisico](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/modFisico.txt?raw=truee)
         
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
