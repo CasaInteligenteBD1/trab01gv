@@ -213,13 +213,13 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
         (em caso de falha na restauração o grupo não pontuará neste quesito)
         c) formato .SQL
 >## Marco de Entrega 03 em: (14/05/2018)<br>
-
+     
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
    ![SQL 9.1](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/9.1.sql?raw=truee)
-        
-     1) Tabela Pessoa:
+     
+      1) Tabela Pessoa:
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.1/TabelaPessoa.PNG)
    
     2) Tabela Pessoa Fisica:
@@ -255,8 +255,6 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
     12) Tabela Bairro:
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.1/TabelaBairro.PNG)
    
-     
-     
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 ![SQL 9.2](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/9.2.sql?raw=truee)
 
@@ -265,8 +263,16 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
    
      2) SELECT id, nome AS Estacionamento, valorhora FROM estacionamento WHERE CAST(valorhora AS numeric) <= 10;
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.2/2_where_estacionamento.png?raw=true)
-
-
+   
+     3) SELECT nome AS Cidade from cidade WHERE fk_estado_id = 1;
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.2/3_where_cidade.png?raw=true)
+   
+     4) SELECT * FROM funcionario WHERE fk_cargo_id = 1;
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.2/4_where_funcionario.png?raw=true)
+   
+     5) SELECT * FROM reserva WHERE datareserva = '2018-04-22';
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.2/5_where_reserva.png?raw=true)
+   
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
     b) Criar no mínimo 3 consultas com operadores aritméticos 
