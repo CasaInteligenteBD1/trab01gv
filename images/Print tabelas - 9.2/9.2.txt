@@ -1,0 +1,14 @@
+SELECT id, numero, andar, status, fk_estacionamento_id FROM vaga WHERE status = 'ocupada'
+1_where_vaga.png
+
+SELECT id, nome AS Estacionamento, valorhora FROM estacionamento WHERE CAST(valorhora AS numeric) <= 10
+2_where_estacionamento.png
+
+SELECT nome AS Cidade from cidade WHERE fk_estado_id = 1
+3_where_cidade.png
+
+SELECT * FROM funcionario WHERE fk_cargo_id = 1
+4_where_funcionario.png
+
+SELECT * FROM reserva WHERE datareserva = '2018-04-22'
+5_where_reserva.png
