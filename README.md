@@ -281,6 +281,40 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
     b) Criar no mínimo 3 consultas com operadores aritméticos 
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
+     a)
+    1) SELECT * FROM cidade as c WHERE c.nome LIKE 'V%';
+  ![Alt text]()
+  
+    2) SELECT * FROM veiculo WHERE marca ILIKE 'F%';
+  ![Alt text]()  
+    
+    3)SELECT logradouro FROM endereco as ende WHERE ende.logradouro ILIKE 'Rua%';
+  ![Alt text]()
+    
+    4) SELECT logradouro FROM endereco as ende WHERE ende.logradouro ILIKE 'Travessa%';
+  ![Alt text]()
+  
+    5) SELECT nome FROM estacionamento WHERE longitude LIKE '46.0%';
+  ![Alt text]()
+  
+    b)
+    1) Função SELECT current_date -  SELECT current_date - ('2009-08-23') AS "diasEmpregado";
+  ![Alt text]()
+  
+    2) Função age - SELECT age(current_date,'2009-08-23');
+  ![Alt text]()
+  
+    3) Função extract e date_part - 
+    SELECT datademissao,
+    EXTRACT(year from datademissao) 
+    FROM funcionario;
+
+    SELECT datademissao,
+    date_part('year', datademissao)
+    FROM funcionario;
+
+  ![Alt text]()
+    
     a) Criar outras 5 consultas que envolvam like ou ilike
     b) Criar uma consulta para cada tipo de função data apresentada.
 
