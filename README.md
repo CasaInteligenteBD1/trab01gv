@@ -199,19 +199,22 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
         a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físic
         b) formato .SQL
-
+![SQL 8.1](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/8.1.sql?raw=truee)
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
         a) Junção dos scripts anteriores em um único script 
         (create para tabelas e estruturas de dados + dados a serem inseridos)
         b) Criar um novo banco de dados para testar a restauracao 
         (em caso de falha na restauração o grupo não pontuará neste quesito)
         c) formato .SQL
+![SQL 8.2](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/8.2.sql?raw=truee)
 #### 8.3 INCLUSÃO DO SCRIPT PARA EXCLUSÃO DE TABELAS EXISTENTES, CRIAÇÃO DE TABELA NOVAS E INSERÇÃO DOS DADOS
         a) Junção dos scripts anteriores em um único script 
         (Drop table + Create de tabelas e estruturas de dados + dados a serem inseridos)
         b) Criar um novo banco de dados para testar a restauracao 
         (em caso de falha na restauração o grupo não pontuará neste quesito)
         c) formato .SQL
+        
+![SQL 8.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/8.3.sql?raw=truee)
 >## Marco de Entrega 03 em: (14/05/2018)<br>
      
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
