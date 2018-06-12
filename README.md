@@ -220,7 +220,7 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
-   ![SQL 9.1](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/9.1.sql?raw=truee)
+   ![SQL 9.1](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/9.1.sql?raw=truee "Arquivo SQL da seção 9.1")
      
       1) Tabela Pessoa:
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.1/TabelaPessoa.PNG)
@@ -259,7 +259,7 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.1/TabelaBairro.PNG)
    
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
-![SQL 9.2](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/9.2.sql?raw=truee)
+![SQL 9.2](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/9.2.sql?raw=truee "Arquivo SQL da seção 9.2")
 
      1) SELECT id, numero, andar, status, fk_estacionamento_id FROM vaga WHERE status = 'ocupada': 
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.2/1_where_vaga.png?raw=true)
@@ -276,10 +276,45 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
      5) SELECT * FROM reserva WHERE datareserva = '2018-04-22';
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.2/5_where_reserva.png?raw=true)
    
-#### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
-    a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
-    b) Criar no mínimo 3 consultas com operadores aritméticos 
-    c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
+#### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)<br>
+![SQL 9.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/9.3.sql "Arquivo SQL da seção 9.3")
+
+    a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e NOT:
+    
+    b) Criar no mínimo 3 consultas com operadores aritméticos:
+    1 -
+    SELECT p.id, p.nome "Motorista", r.horareserva, r.horasaida, r.horasaida - r.horareserva "Tempo de permanência" FROM reserva r
+    JOIN motorista m ON r.fk_motorista_fk_pessoa_fisica_fk_pessoa_id = m.fk_pessoa_fisica_fk_pessoa_id
+    JOIN pessoa p ON m.fk_pessoa_fisica_fk_pessoa_id = p.id;
+   ![select 9.3.b.1](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.3/9_3_b_1.PNG?raw=true "9_3_b_1.PNG")
+    
+    2 -
+    SELECT f.matricula, dataadmissao "Data Adminissão", datademissao "Data Demissão", datademissao - dataadmissao "Duração do emprego"
+    FROM funcionario f
+    WHERE f.datademissao IS NOT NULL;
+   ![select 9.3.b.2](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.3/9_3_b_2.PNG?raw=true "9_3_b_2.PNG")
+    
+    3 -
+    SELECT nome , valorhora, qntvagas, valorhora*qntvagas AS "Total bruto com todas as vagas em uso"  FROM estacionamento;
+   ![select 9.3.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.3/9_3_b_3.PNG?raw=true "9_3_b_3.PNG")
+    
+    c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas:
+    1 -
+    SELECT p.nome AS "Pessoas Físicas" FROM pessoa p
+    JOIN pessoa_fisica pf ON p.id = pf.fk_pessoa_id
+    GROUP BY p.nome;
+   ![select 9.3.c.1](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.3/9_3_c_1.PNG?raw=true "9_3_c_1.PNG")
+    
+    2 -
+    SELECT e.nome AS "Estacionamento", COUNT(v) AS "Total_Vagas" FROM estacionamento AS e
+    INNER JOIN vaga AS v ON e.id = v.fk_estacionamento_id
+    GROUP BY e.nome;
+   ![select 9.3.c.2](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.3/9_3_c_2.PNG?raw=true "9_3_c_2.PNG")
+    
+    3 -
+    SELECT COUNT(e) AS "Total Estacionamentos", SUM(qntvagas) AS "Total de Vagas" FROM estacionamento e;
+   ![select 9.3.c.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.3/9_3_c_3.PNG?raw=true "9_3_c_3.PNG")
+    
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
      a)
     1) SELECT * FROM cidade as c WHERE c.nome LIKE 'V%';
