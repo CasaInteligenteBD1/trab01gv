@@ -318,26 +318,26 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
      a)
     1) SELECT * FROM cidade as c WHERE c.nome LIKE 'V%';
-  ![Alt text]()
+  ![select 9.4.a.1](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/1.PNG)
   
     2) SELECT * FROM veiculo WHERE marca ILIKE 'F%';
-  ![Alt text]()  
+  ![select 9.4.a.2](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/2.PNG)  
     
     3)SELECT logradouro FROM endereco as ende WHERE ende.logradouro ILIKE 'Rua%';
-  ![Alt text]()
+  ![select 9.4.a.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/3.PNG)
     
     4) SELECT logradouro FROM endereco as ende WHERE ende.logradouro ILIKE 'Travessa%';
-  ![Alt text]()
+  ![select 9.4.a.4](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/4.PNG)
   
     5) SELECT nome FROM estacionamento WHERE longitude LIKE '46.0%';
-  ![Alt text]()
+  ![select 9.4.a.5](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/5.PNG)
   
     b)
     1) Função SELECT current_date -  SELECT current_date - ('2009-08-23') AS "diasEmpregado";
-  ![Alt text]()
+  ![select 9.4.b.1](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/6.PNG)
   
     2) Função age - SELECT age(current_date,'2009-08-23');
-  ![Alt text]()
+  ![select 9.4.b.2](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/7.PNG)
   
     3) Função extract e date_part - 
     SELECT datademissao,
@@ -348,10 +348,7 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
     date_part('year', datademissao)
     FROM funcionario;
 
-  ![Alt text]()
-    
-    a) Criar outras 5 consultas que envolvam like ou ilike
-    b) Criar uma consulta para cada tipo de função data apresentada.
+  ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/8.PNG)
 
 >## Marco de Entrega 04 em: (04/06/2017)<br>
     
