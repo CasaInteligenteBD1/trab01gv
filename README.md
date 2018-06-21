@@ -30,13 +30,15 @@ O estacIonA é um sistema desenvolvido para atender empresas de estacionamento p
 
 Do motorista, será armazenado o número da sua CNH e seu CPF. O motorista poderá reservar vagas, desde que tenha créditos em sua carteira digital (também responsável por armazenar informações de recargas). Existirão três maneiras de um motorista acrescentar créditos a sua carteira, payPal, cartão de crédito ou débito. Para cada uma dessas formas de pagamentos serão armazenados, respectivamente, o nome da conta payPal, e o número do cartão para as duas últimas.
  
-Um estacionamento possui um endereço, e nele trabalha dois tipos de funcionários, o administrador e o guarda. E quanto às informações específicas de cada estacionamento, serão armazenadas a quantidade de vagas, o valor da hora de utilização de uma vaga e sua localização para o GPS (latitude e longitude).
+Os estacionamentos possuem um endereço, e neles trabalham dois tipos de funcionários: o administrador e o guarda. E quanto às informações específicas de cada estacionamento, serão armazenadas a quantidade de vagas, o valor da hora de utilização de uma vaga e sua localização para o GPS (latitude e longitude).
  
 Sobre a vaga, é importante saber o status dela, ou seja,  se está reservada ou não. Também é importante saber qual estacionamento ela pertence, o número do andar, o seu número identificador, e sua localização para o GPS (latitude e longitude).
 
 Para realizar uma reserva, o motorista ter pelo menos um veículo cadastrado, então ele escolhe pelo GPS um estacionamento que deseja utilizar, visualiza as vagas livres e ocupadas deste estacionamento, escolhe uma das vagas livres, informa qual será seu horário de entrada na vaga e confirma o pagamento, para isso o motorista já deve ter créditos suficientes em sua carteira digital no aplicativo. Ao sair da vaga o sistema calcula o valor total que o motorista terá que pagar, e então o sistema descontará dos seus créditos. O motorista com o aplicativo pode, de qualquer lugar, efetuar a reserva de uma vaga de estacionamento que estiver livre (que não está em uso ou não foi reservada).
 
-Um motorista poderá financiar seus créditos em sua carteira digital no aplicativo utilizando cartão de de crédito ou débito ou payPal.
+O cadastro do veículo contemplará as informações da marca, de seu modelo, o ano do automóvel, além de sua placa.
+
+Um motorista poderá financiar seus créditos em sua carteira digital no aplicativo utilizando cartão de crédito ou débito ou payPal.
 
 A reserva garante que um motorista garanta sua utilização de uma determinada vaga por uma hora, a contar a partir da hora que ele informou ao solicitar a reserva. O motorista, antes de se retirar do estacionamento, deverá pagar pelas horas excedentes à primeira de utilização da vaga.
 
