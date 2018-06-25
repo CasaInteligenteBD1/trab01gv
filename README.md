@@ -334,11 +334,12 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
     5) SELECT nome FROM estacionamento WHERE longitude LIKE '46.0%';
   ![select 9.4.a.5](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/5.PNG)
   
-    b)
-    1) Função SELECT current_date -  SELECT current_date - ('2009-08-23') AS "diasEmpregado";
+    b)  
+    Obs: current_date = 11/06/2018
+    1) Função SELECT current_date:  SELECT current_date - ('2009-08-23') AS "diasEmpregado";
   ![select 9.4.b.1](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/6.PNG)
   
-    2) Função age - SELECT age(current_date,'2009-08-23');
+    2) Função age: SELECT age(current_date,'2009-08-23');
   ![select 9.4.b.2](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/7.PNG)
   
     3) Função extract e date_part - 
