@@ -320,13 +320,13 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
      a)
     1) SELECT * FROM cidade as c WHERE c.nome LIKE 'V%';
-  ![select 9.4.a.1](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/1.PNG)
+  ![select 9.4.a.1](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/9.4_a_1.PNG)
   
     2) SELECT * FROM veiculo WHERE marca ILIKE 'F%';
-  ![select 9.4.a.2](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/2.PNG)  
+  ![select 9.4.a.2](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/9.4_a_2.PNG)  
     
     3)SELECT logradouro FROM endereco as ende WHERE ende.logradouro ILIKE 'Rua%';
-  ![select 9.4.a.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/3.PNG)
+  ![select 9.4.a.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/9.4_a_3.PNG)
     
     4) SELECT logradouro FROM endereco as ende WHERE ende.logradouro ILIKE 'Travessa%';
   ![select 9.4.a.4](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/4.PNG)
