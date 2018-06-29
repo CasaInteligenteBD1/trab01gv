@@ -76,7 +76,7 @@ Um estacionamento poderá ser gerenciado por um ou mais funcionários administra
         * O protótipo deve possui no mínimo duas relações N para N
         * o mínimo de entidades do modelo conceitual será igual a 5
        
-![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/modConceitual_2.png?raw=true "Modelo Conceitual")
+![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/diagrama%20e%20modelos/modConceitual_4.png?raw=true "Modelo Conceitual")
     
     B) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
     C) QUALIDADE 
@@ -84,7 +84,7 @@ Um estacionamento poderá ser gerenciado por um ou mais funcionários administra
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas
         
-![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Diagrama_Classe_Estaciona_modificado.png?raw=true "Diagrama de Classes")
+![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/diagrama%20e%20modelos/Diagrama_Classe_Estaciona_4.png?raw=true "Diagrama de Classes")
     
 #### 5.1 Validação do Modelo Conceitual
   <b>Grupo RFID/EasyMarket:</b> Antônio Carlos Durães, Jennifer Gonçalves, Joel Will e Larissa Motta<br>
@@ -191,7 +191,7 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
         b) verificação de correspondencia com o modelo conceitual 
         (não serão aceitos modelos que não estejam em conformidade)
         
-![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/modLogico.png?raw=truee "Modelo Lógico")
+![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/diagrama%20e%20modelos/modLogico_4.png?raw=truee "Modelo Lógico")
 
 ### 7	MODELO FÍSICO<br>
 
@@ -210,9 +210,9 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
         c) formato .SQL
 ![SQL 8.2](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/8.2.sql?raw=truee)
 #### 8.3 INCLUSÃO DO SCRIPT PARA EXCLUSÃO DE TABELAS EXISTENTES, CRIAÇÃO DE TABELA NOVAS E INSERÇÃO DOS DADOS
-        a) Junção dos scripts anteriores em um único script 
+        a) Junção dos scripts anteriores em um único script
         (Drop table + Create de tabelas e estruturas de dados + dados a serem inseridos)
-        b) Criar um novo banco de dados para testar a restauracao 
+        b) Criar um novo banco de dados para testar a restauracao
         (em caso de falha na restauração o grupo não pontuará neste quesito)
         c) formato .SQL
         
