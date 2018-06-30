@@ -261,7 +261,7 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.1/TabelaBairro.PNG)
    
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
-![SQL 9.2](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/9.2.sql?raw=truee "Arquivo SQL da seção 9.2")
+[SQL 9.2](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/9_2.sql "Arquivo SQL da seção 9.2")
 
      1) SELECT id, numero, andar, status, fk_estacionamento_id FROM vaga WHERE status = 'ocupada': 
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.2/1_where_vaga.png?raw=true)
@@ -279,7 +279,7 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.2/5_where_reserva.png?raw=true)
    
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)<br>
-![SQL 9.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/9.3.sql "Arquivo SQL da seção 9.3")
+[SQL 9.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/9.3.sql "Arquivo SQL da seção 9.3")
 
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e NOT:
     
