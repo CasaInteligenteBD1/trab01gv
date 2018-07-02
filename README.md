@@ -406,6 +406,10 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
    ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/depois-2_9.5.PNG)
     
     3) UPDATE estacionamento SET valorhora = 12.0 WHERE id = 2;
+   
+   ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/antes-3_9.5.PNG)
+    
+   ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/despois-3_9.5.PNG)
 
     4) DELETE FROM funcionario WHERE matricula = '222222';
     5) DELETE FROM reserva WHERE id = 2;
