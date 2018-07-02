@@ -127,99 +127,98 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
 #### 5.3 DESCRIÇÃO DOS DADOS 
     
 <b>Pessoa:</b> tabela que armazena as informações comuns entre pessoa jurídica, motorista e funcionário.<br>
-- <b>id:</b> campo que identifica a pessoa;<br>
-- <b>nome:</b> campo que armazena o nome completo da pessoa;<br>
-- <b>senha:</b> campo que armazena a senha (em md5) da pessoa.<br>
-- <b>telefone:</b> campo que armazena o telefone de contato da pessoa;<br>
-- <b>email:</b> campo que armazena o email da pessoa.<br>
+<b>id:</b> campo que identifica a pessoa;<br>
+<b>nome:</b> campo que armazena o nome completo da pessoa;<br>
+<b>senha:</b> campo que armazena a senha (em md5) da pessoa.<br>
+<b>telefone:</b> campo que armazena o telefone de contato da pessoa;<br>
+<b>email:</b> campo que armazena o email da pessoa.<br>
 
 <b>Pessoa_Juridica:</b> tabela que armazena as informações somente de pessoas jurídicas.<br>
-- <b>cnpj:</b> campo que armazena o cnpj da pessoa jurídica.<br>
+<b>cnpj:</b> campo que armazena o cnpj da pessoa jurídica.<br>
 
 <b>Pessoa_Fisica:</b> tabela que armazena as informações somente de pessoas físicas.<br>
-- <b>cpf:</b> campo que armazena o cpf da pessoa física.<br>
+<b>cpf:</b> campo que armazena o cpf da pessoa física.<br>
 
 <b>Funcionario:</b> tabela que armazena as informações dos funcionários de cada empresa.<br>
-- <b>matricula:</b> campo que armazena o número da matrícula do funcionário.<br>
-- <b>dataAdmissao:</b> campo que armazena a data que o funcionário foi contratado.<br>
-- <b>dataDemissao:</b> campo que armazena a data que o funcionário foi demitido.<br>
+<b>matricula:</b> campo que armazena o número da matrícula do funcionário.<br>
+<b>dataAdmissao:</b> campo que armazena a data que o funcionário foi contratado.<br>
+<b>dataDemissao:</b> campo que armazena a data que o funcionário foi demitido.<br>
 
 <b>Cargo:</b> tabela que armazena o cargo que um funcionários pode exercer.<br>
-- <b>id:</b> campo que identifica o cargo do funcionário.<br>
-- <b>nome:</b> campo que armazena o nome do cargo do funcionário.<br>
+<b>id:</b> campo que identifica o cargo do funcionário.<br>
+<b>nome:</b> campo que armazena o nome do cargo do funcionário.<br>
 
 <b>Reserva:</b> tabela que armazena as reservas realizadas no sistema.<br>
-- <b>id:</b> campo que identifica a reserva cadastrada;<br>
-- <b>horaReserva:</b> campo que identifica o horário da reserva cadastrada;<br>
-- <b>dataReserva:</b> campo que identifica a data da reserva cadastrada;<br>
-- <b>horaSaida:</b> campo que identifica o horário que o veículo saiu do estacionamento.<br>
+<b>id:</b> campo que identifica a reserva cadastrada;<br>
+<b>horaReserva:</b> campo que identifica o horário da reserva cadastrada;<br>
+<b>dataReserva:</b> campo que identifica a data da reserva cadastrada;<br>
+<b>horaSaida:</b> campo que identifica o horário que o veículo saiu do estacionamento.<br>
 
 <b>Estacionamento:</b> tabela que armazena as informações do estacionamento.<br>
-- <b>id:</b> campo que identifica o estacionamento;<br>
-- <b>nome:</b> campo que armazena o nome do estacionamento (para visualização no aplicativo;<br>
-- <b>qntVagas:</b> campo que identifica a quantidade de vagas disponíveis no momento;<br>
-- <b>valorHora:</b> campo que armazena o valor/hora do estacionamento;<br>
-- <b>latitude:</b> campo que armazena a latitude do estacionamento;<br>
-- <b>longitude:</b> campo que armazena a longitude do estacionamento.<br>
+<b>id:</b> campo que identifica o estacionamento;<br>
+<b>nome:</b> campo que armazena o nome do estacionamento (para visualização no aplicativo;<br>
+<b>qntVagas:</b> campo que identifica a quantidade de vagas disponíveis no momento;<br>
+<b>valorHora:</b> campo que armazena o valor/hora do estacionamento;<br>
+<b>latitude:</b> campo que armazena a latitude do estacionamento;<br>
+<b>longitude:</b> campo que armazena a longitude do estacionamento.<br>
 
 <b>Vaga:</b> tabela que armazena informações da vaga de um estacionamento.<br>
-- <b>id:</b> campo que identifica a vaga em questão;<br>
-- <b>andar:</b> campo que identifica o andar da vaga;<br>
-- <b>numero:</b> campo que armazena o número da vaga;<br>
-- <b>latitude:</b> campo que armazena a latitude da vaga;<br>
-- <b>longitude:</b> campo que armazena a longitude da vaga.<br>
+<b>id:</b> campo que identifica a vaga em questão;<br>
+<b>andar:</b> campo que identifica o andar da vaga;<br>
+<b>numero:</b> campo que armazena o número da vaga;<br>
+<b>latitude:</b> campo que armazena a latitude da vaga;<br>
+<b>longitude:</b> campo que armazena a longitude da vaga.<br>
 
 <b>Veículo:</b> tabela que armazena as informações do veículo.<br>
-- <b>modelo:</b> campo que identifica o modelo do veículo;<br>
-- <b>marca:</b> campo que identifica a marca do veículo;<br>
-- <b>ano:</b> campo que identifica o ano do veículo;<br>
-- <b>placa:</b> campo que identifica a placa do veículo;<br>
+<b>modelo:</b> campo que identifica o modelo do veículo;<br>
+<b>marca:</b> campo que identifica a marca do veículo;<br>
+<b>ano:</b> campo que identifica o ano do veículo;<br>
+<b>placa:</b> campo que identifica a placa do veículo;<br>
 
 <b>Motorista:</b> tabela que armazena as informações dos motoristas.<br>
-- <b>creditos:</b> campo que armazena os créditos do motorista;<br>
-- <b>cnh:</b> campo que armazena o número da CNH do motorista.<br>
-
+<b>creditos:</b> campo que armazena os créditos do motorista;<br>
+<b>cnh:</b> campo que armazena o número da CNH do motorista.<br>
 <b>Pagamento_Estacionamento:</b> tabela que armazena as informações dos pagamentos efetuados pelos motoristas.<br>
-- <b>id:</b> campo que identifica o pagamento realizado pelo motorista;<br>
-- <b>valor:</b> campo que armazena o valor do pagamento;<br>
-- <b>data:</b> campo que armazena a data do pagamento .<br>
+<b>id:</b> campo que identifica o pagamento realizado pelo motorista;<br>
+<b>valor:</b> campo que armazena o valor do pagamento;<br>
+<b>data:</b> campo que armazena a data do pagamento .<br>
 
 <b>Recarga:</b> tabela que armazena as recargas efetuadas pelos motoristas.<br>
-- <b>id:</b> campo que identifica a recarga realizada;<br>
-- <b>valor:</b> campo que armazena o valor da recarga realizada;<br>
+<b>id:</b> campo que identifica a recarga realizada;<br>
+<b>valor:</b> campo que armazena o valor da recarga realizada;<br>
 
 <b>Forma_Pagamento:</b> tabela que armazena as informações em comum das formas de pagamento disponíveis para os motoristas.<br>
-- <b>id:</b> campo que identifica a forma de pagamento;<br>
+<b>id:</b> campo que identifica a forma de pagamento;<br>
 
 <b>Cartao:</b> tabela que armazena as informações dos cartões dos clientes.<br>
-- <b>numero:</b> campo que armazena o número do cartão do cliente;<br>
-- <b>bandeira:</b> campo que armazena a bandeira do cartão;<br>
-- <b>numParcelas:</b> campo que armazena o número de parcelas escolhido pelo cliente na recarga;<br>
+<b>numero:</b> campo que armazena o número do cartão do cliente;<br>
+<b>bandeira:</b> campo que armazena a bandeira do cartão;<br>
+<b>numParcelas:</b> campo que armazena o número de parcelas escolhido pelo cliente na recarga;<br>
 
 <b>Tipo_Cartao:</b> tabela que armazena os tipos de cartões.<br>
-- <b>id:</b> campo que identifica o tipo do cartão armazenada;<br>
-- <b>descricao:</b> campo que descreve o tipo do cartão (crédito ou débito);<br>
+<b>id:</b> campo que identifica o tipo do cartão armazenada;<br>
+<b>descricao:</b> campo que descreve o tipo do cartão (crédito ou débito);<br>
 
 <b>Paypal:</b> tabela que armazena a identificação da conta Paypal cadastrada pelo motorista.<br>
-- <b>conta:</b> campo que armazena a conta Paypal do motorista;<br>
+<b>conta:</b> campo que armazena a conta Paypal do motorista;<br>
 
 <b>Endereco:</b> tabela que armazena os endereços dos estacionamentos cadastrados.<br>
-- <b>id:</b> campo que identifica um endereço;<br>
-- <b>cep:</b> campo que armazena o cep do estacionamento cadastrado;<br>
-- <b>logradouro:</b> campo que armazena o logradouro (rua) do estacionamento cadastrado;<br>
-- <b>complemento:</b> campo que armazena o complemento do endereço;<br>
+<b>id:</b> campo que identifica um endereço;<br>
+<b>cep:</b> campo que armazena o cep do estacionamento cadastrado;<br>
+<b>logradouro:</b> campo que armazena o logradouro (rua) do estacionamento cadastrado;<br>
+<b>complemento:</b> campo que armazena o complemento do endereço;<br>
 
 <b>Bairro:</b> tabela que armazena todos os bairros dos estacionamentos cadastrados.
 <b>id:</b> campo que identifica o bairro cadastrado;<br>
 <b>nome:</b> campo que armazena o nome do bairro cadastrado.<br>
 
 <b>Cidade:</b> tabela que armazena todas as cidades dos estacionamentos cadastrados.
-- <b>id:</b> campo que identifica a cidade cadastrada;<br>
-- <b>nome:</b> campo que armazena o nome da cidade cadastrada.<br>
+<b>id:</b> campo que identifica a cidade cadastrada;<br>
+<b>nome:</b> campo que armazena o nome da cidade cadastrada.<br>
 
 <b>Estado:</b> tabela que armazena todos os estados dos estacionamentos cadastrados.
-- <b>id:</b> campo que identifica o estado cadastrado;<br>
-- <b>nome:</b> campo que armazena o nome do estado cadastrado.<br>
+<b>id:</b> campo que identifica o estado cadastrado;<br>
+<b>nome:</b> campo que armazena o nome do estado cadastrado.<br>
 
 
 ### 6	MODELO LÓGICO<br>
