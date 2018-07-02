@@ -413,13 +413,13 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
 
     4) DELETE FROM funcionario WHERE matricula = '222222';
     
-   ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/antes_4d_9.5.PNG)
-    
-   ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/depois_4d_9.5.PNG)
+   
    
     5) DELETE FROM reserva WHERE id = 2;
     
-   
+   ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/antes_4d_9.5.PNG)
+    
+   ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/depois_4d_9.5.PNG)
    
     6) DELETE FROM veiculo_motorista WHERE fk_veiculo_id = 17;
     
