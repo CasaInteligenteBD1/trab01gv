@@ -299,19 +299,19 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
 [SQL 9.2](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/9_2.sql "Arquivo SQL da seção 9.2")
 
      1) SELECT id, numero, andar, status, fk_estacionamento_id FROM vaga WHERE status = 'ocupada': 
-   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.2/1_where_vaga.png?raw=true)
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print-Tela%209.2%20-%20ATT%2002-07/9_2_1.png?raw=true)
    
      2) SELECT id, nome AS Estacionamento, valorhora FROM estacionamento WHERE CAST(valorhora AS numeric) <= 10;
-   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.2/2_where_estacionamento.png?raw=true)
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print-Tela%209.2%20-%20ATT%2002-07/9_2_2.png?raw=true)
    
      3) SELECT nome AS Cidade from cidade WHERE fk_estado_id = 1;
-   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.2/3_where_cidade.png?raw=true)
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print-Tela%209.2%20-%20ATT%2002-07/9_2_3.png?raw=true)
    
      4) SELECT * FROM funcionario WHERE fk_cargo_id = 1;
-   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.2/4_where_funcionario.png?raw=true)
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print-Tela%209.2%20-%20ATT%2002-07/9_2_4.png?raw=true)
    
      5) SELECT * FROM reserva WHERE datareserva = '2018-04-22';
-   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.2/5_where_reserva.png?raw=true)
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print-Tela%209.2%20-%20ATT%2002-07/9_2_5.png?raw=true)
    
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)<br>
 [SQL 9.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/9.3.sql "Arquivo SQL da seção 9.3")
