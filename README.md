@@ -391,6 +391,15 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
 >## Marco de Entrega 04 em: (04/06/2017)<br>
     
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
+
+    1) UPDATE pessoa SET senha = 'novaSenha' WHERE id = 4;
+    1) UPDATE funcionario SET datademissao = '2018-07-02' WHERE matricula = '222222';
+    3) UPDATE estacionamento SET valorhora = 12.0 WHERE id = 2;
+
+    4) DELETE FROM funcionario WHERE matricula = '222222';
+    5) DELETE FROM reserva WHERE id = 2;
+    6) DELETE FROM veiculo_motorista WHERE fk_veiculo_id = 17;
+
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
         a) Uma junção que envolva todas as tabelas possuindo no mínimo 3 registros no resultado
         b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
