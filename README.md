@@ -418,7 +418,14 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
    ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/depois_4d_9.5.PNG)
    
     5) DELETE FROM reserva WHERE id = 2;
+    
+   
+   
     6) DELETE FROM veiculo_motorista WHERE fk_veiculo_id = 17;
+    
+   ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/antes_5d_9.5.PNG)
+    
+   ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/depois_5d_9.5.PNG)
 
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
         a) Uma junção que envolva todas as tabelas possuindo no mínimo 3 registros no resultado
