@@ -1,3 +1,5 @@
+/*9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)*/
+
 SELECT id, numero, andar, status, fk_estacionamento_id FROM vaga WHERE status = 'ocupada';
 SELECT id, nome AS Estacionamento, valorhora FROM estacionamento WHERE CAST(valorhora AS numeric) <= 10;
 SELECT nome AS Cidade from cidade WHERE fk_estado_id = 8;
