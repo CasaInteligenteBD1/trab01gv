@@ -393,6 +393,13 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
 
     1) UPDATE pessoa SET senha = 'novaSenha' WHERE id = 4;
+    
+    # Antes 
+   ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/antes-1_9.5.PNG)
+    
+    # Depois 
+   ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/despois-1_9.5.PNG)
+    
     1) UPDATE funcionario SET datademissao = '2018-07-02' WHERE matricula = '222222';
     3) UPDATE estacionamento SET valorhora = 12.0 WHERE id = 2;
 
