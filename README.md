@@ -17,32 +17,48 @@ Caicke Carvalho de Pinheiro: caicke@gmail.com<br>
 Emanuel Rampinelli: emanuel_rampinelli@hotmail.com<br>
 
 
-### 2. INTRODUÇÃO E MOTIVAÇAO<br>
+### 2. INTRODUÇÃO E MOTIVAÇÃO<br>
 
-O projeto estacIonA vem com a ideia de facilitar a vida das pessoas que precisam estacionar em grandes centros urbanos. Por meio de um sistema, será possível pesquisar e reservar vagas de estacionamento disponíveis, na visão do motorista; efetuar cadastros e visualizar relatórios, na visão empresarial.
+O projeto estacIonA tem a finalidade de facilitar a vida das pessoas que precisam estacionar seus veículos em grandes centros urbanos, onde há grande concorrência por vagas de estacionamento.
 
-A engrenagem que nos move é a grande necessidade dos motoristas em estacionar seus carros nos grandes centros, somada a grande concorrência das vagas, que por sua vez geram uma perda de tempo e estresse aos motoristas. Essa situação nos dá uma oportunidade de negócio junto aos estacionamentos privativos, na qual um cliente poderá pagar pela reserva de uma vaga, garantindo-a e evitando possíveis transtornos para se achar uma vaga posteriormente, com a comodidade de realizar essa tarefa pelo seu smartphone.
- 
+A grande necessidade dos motoristas em estacionar seus carros nos grandes centros, somada a grande concorrência das vagas, que por sua vez geram uma perda de tempo e estresse aos motoristas gera uma oportunidade de negócio junto aos estacionamentos privativos, na qual um cliente poderá pagar pela reserva de uma vaga, garantindo-a e evitando possíveis transtornos para se achar uma vaga posteriormente, com a comodidade de realizar essa tarefa pelo seu smartphone de onde estiver.
 
-### 3.MINI-MUNDO Novo<br>
 
-O estacIonA é um sistema desenvolvido para atender empresas de estacionamento privadas, localizadas em grandes centros urbanos. O sistema é feito para funcionar em conjunto com sensores, que possibilitarão identificar as placas dos veículos e ajudar na atualização da visualização das vagas livres/ocupadas no sistema. Sua principal função é permitir que os motoristas reservem vagas de estacionamento para seus veículos de maneira remota nesses estacionamentos, que devem estar cadastrados no estacIonA.
+### 3.MINI-MUNDO<br>
 
-Do motorista, será armazenado o número da sua CNH e seu CPF. O motorista poderá reservar vagas, desde que tenha créditos em sua carteira digital (também responsável por armazenar informações de recargas). Existirão três maneiras de um motorista acrescentar créditos a sua carteira, payPal, cartão de crédito ou débito. Para cada uma dessas formas de pagamentos serão armazenados, respectivamente, o nome da conta payPal, e o número do cartão para as duas últimas.
- 
-Os estacionamentos possuem um endereço, e neles trabalham dois tipos de funcionários: o administrador e o guarda. E quanto às informações específicas de cada estacionamento, serão armazenadas a quantidade de vagas, o valor da hora de utilização de uma vaga e sua localização para o GPS (latitude e longitude).
- 
-Sobre a vaga, é importante saber o status dela, ou seja,  se está reservada ou não. Também é importante saber qual estacionamento ela pertence, o número do andar, o seu número identificador, e sua localização para o GPS (latitude e longitude).
+O estacIonA é um sistema desenvolvido para atender empresas de estacionamento privadas, localizadas em grandes centros urbanos, as quais possuem características comuns como funcionários administradores e guardas. Cada empresa poderá cadastrar no sistema todos os seus estacionamentos.
 
-Para realizar uma reserva, o motorista ter pelo menos um veículo cadastrado, então ele escolhe pelo GPS um estacionamento que deseja utilizar, visualiza as vagas livres e ocupadas deste estacionamento, escolhe uma das vagas livres, informa qual será seu horário de entrada na vaga e confirma o pagamento, para isso o motorista já deve ter créditos suficientes em sua carteira digital no aplicativo. Ao sair da vaga o sistema calcula o valor total que o motorista terá que pagar, e então o sistema descontará dos seus créditos. O motorista com o aplicativo pode, de qualquer lugar, efetuar a reserva de uma vaga de estacionamento que estiver livre (que não está em uso ou não foi reservada).
+O estacIonA permitirá que os clientes (motoristas) escolham um dos estacionamentos cadastrados no estacIonA e então visualizem as vagas livres e ocupadas desse estacionamento. A partir daí, os clientes poderão escolher uma das vagas livres e efetuar uma reserva, tudo isso de maneira remota através de aplicativo em seus smartphones.
 
-O cadastro do veículo contemplará as informações da marca, de seu modelo, o ano do automóvel, além de sua placa.
+Após escolher uma vaga livre, para reservá-la, o motorista deverá dar informações do veículo que vai ocupar a vaga, informar o horário de sua entrada na vaga e ter créditos suficientes em sua conta no estacIonA, pois para efetuar a reserva serão debitados o valor referente a uma hora de uso de uma vaga de um determinado estacionamento, garantindo assim sua vaga por uma hora. A reserva faz com que o motorista garanta a utilização de uma determinada vaga por uma hora, a contar a partir da hora de entrada na vaga que ele informou. Qualquer reserva tem duração de uma hora.
 
-Um motorista poderá financiar seus créditos em sua carteira digital no aplicativo utilizando cartão de crédito ou débito ou payPal.
+Quando um motorista sair de sua vaga, o sistema verificará sua situação que poderão ser uma das duas:
 
-A reserva garante que um motorista garanta sua utilização de uma determinada vaga por uma hora, a contar a partir da hora que ele informou ao solicitar a reserva. O motorista, antes de se retirar do estacionamento, deverá pagar pelas horas excedentes à primeira de utilização da vaga.
+1. O motorista utilizou a vaga dentro do tempo da reserva (uma hora), então o sistema entende que este motorista não possui débitos com o estacionamento e então pode ser liberado.
 
-Um estacionamento poderá ser gerenciado por um ou mais funcionários administradores, na qual eles poderão, para os estacionamentos que cada um deles gerencia, cadastrar, editar e excluir vagas e cadastrar e editar estacionamentos. saber quais vagas estão ocupadas ou livres de forma visual. O guarda poderá apenas visualizar as informações das vagas(local, número, etc), e se a vaga está ocupada ou não.
+2. O motorista utilizou a vaga além do tempo da reserva (mais de uma hora), então o sistema gerará uma cobrança com o valor que este motorista terá que pagar. Após o pagamento desta cobrança, também feita pelo aplicativo, o sistema reconhecerá que a saída do motorista do estacionamento está permitida.
+
+A situação 2 acima, permite que um motorista utilize a vaga do estacionamento que ele reservou por um tempo indeterminado.
+
+De um veículo, é importante armazenar as informações de ano, marca, modelo e a placa.
+
+Um motorista poderá financiar a recarga de seus créditos em sua conta no estacIonA utilizando cartão de crédito ou débito ou payPal. Se a recarga for feita através de cartão de crédito, então será possível parcelar em até três vezes o valor da recarga e não haverá cobrança de juros.
+
+É importante que se armazene o número e a bandeira do cartão e a conta payPal dos motoristas.
+
+É importante que se guarde o histórico de reservas realizadas.
+
+Funcionários administradores poderão cadastrar, editar e excluir vagas e estacionamentos e saber quais vagas estão ocupadas ou livres de forma visual. O guarda poderá apenas visualizar as vagas livres e ocupadas do estacionamento que está vigiando
+
+Quanto às informações de cada estacionamento, serão armazenadas nome, quantidade de vagas, valor da hora de utilização de uma vaga, sua localização para o GPS (latitude e longitude) e seu endereço.
+
+Sobre a vaga, é importante saber a qual estacionamento ela pertence, o número do andar, o seu número identificador, e sua localização para o GPS (latitude e longitude).
+
+Do motorista, serão armazenados nome, telefone, email, CPF e o número da sua CNH.
+
+Do funcionário, serão armazenados nome, telefone, email, CPF, matrícula, data de admissão, data de demissão e o seu cargo (admInistrador ou guarda).
+
+De uma empresa de estacionamentos, serão armazenados nome, telefone, email e CNPJ.
 
 <br>
 
@@ -106,84 +122,104 @@ Um estacionamento poderá ser gerenciado por um ou mais funcionários administra
 Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma reserva de vaga, deve pagar, no momento que a faz, o valor de uma hora de utilização do estacionamento. O que garante a utilização da vaga também por uma hora para o motorista.<br>
 
 >## Marco de Entrega 02 em: (23/04/2018)<br>
+
+
 #### 5.3 DESCRIÇÃO DOS DADOS 
     
-<b>Pessoa:</b> tabela que armazena as informações do cliente.<br>
-<b>id:</b> campo que identifica a pessoa;<br>
-<b>nome:</b> campo que armazena o nome completo da pessoa;<br>
-<b>senha:</b> campo que armazena a senha (em md5) da pessoa.<br>
+<b>Pessoa:</b> tabela que armazena as informações comuns entre pessoa jurídica, motorista e funcionário.<br>
+- <b>id:</b> campo que identifica a pessoa;<br>
+- <b>nome:</b> campo que armazena o nome completo da pessoa;<br>
+- <b>senha:</b> campo que armazena a senha (em md5) da pessoa.<br>
+- <b>telefone:</b> campo que armazena o telefone de contato da pessoa;<br>
+- <b>email:</b> campo que armazena o email da pessoa.<br>
 
 <b>Pessoa_Juridica:</b> tabela que armazena as informações somente de pessoas jurídicas.<br>
-<b>cnpj:</b> campo que armazena o cnpj da pessoa jurídica.<br>
+- <b>cnpj:</b> campo que armazena o cnpj da pessoa jurídica.<br>
 
 <b>Pessoa_Fisica:</b> tabela que armazena as informações somente de pessoas físicas.<br>
-<b>cpf:</b> campo que armazena o cpf da pessoa física.<br>
+- <b>cpf:</b> campo que armazena o cpf da pessoa física.<br>
 
 <b>Funcionario:</b> tabela que armazena as informações dos funcionários de cada empresa.<br>
-<b>matricula:</b> campo que identifica o número da matrícula do funcionário.<br>
-<b>dataAdmissao:</b> campo que armazena a data que o funcionário foi contratado.<br>
-<b>dataDemissao:</b> campo que armazena a data que o funcionário foi demitido.<br>
+- <b>matricula:</b> campo que armazena o número da matrícula do funcionário.<br>
+- <b>dataAdmissao:</b> campo que armazena a data que o funcionário foi contratado.<br>
+- <b>dataDemissao:</b> campo que armazena a data que o funcionário foi demitido.<br>
+
+<b>Cargo:</b> tabela que armazena o cargo que um funcionários pode exercer.<br>
+- <b>id:</b> campo que identifica o cargo do funcionário.<br>
+- <b>nome:</b> campo que armazena o nome do cargo do funcionário.<br>
 
 <b>Reserva:</b> tabela que armazena as reservas realizadas no sistema.<br>
-<b>id:</b> campo que identifica a reserva cadastrada;<br>
-<b>horaReserva:</b> campo que identifica o horário da reserva cadastrada;<br>
-<b>dataReserva:</b> campo que identifica a data da reserva cadastrada;<br>
+- <b>id:</b> campo que identifica a reserva cadastrada;<br>
+- <b>horaReserva:</b> campo que identifica o horário da reserva cadastrada;<br>
+- <b>dataReserva:</b> campo que identifica a data da reserva cadastrada;<br>
+- <b>horaSaida:</b> campo que identifica o horário que o veículo saiu do estacionamento.<br>
 
 <b>Estacionamento:</b> tabela que armazena as informações do estacionamento.<br>
-<b>id:</b> campo que identifica o estacionamento;<br>
-<b>nome:</b> campo que armazena o nome do estacionamento (para visualização no aplicativo;<br>
-<b>qntVagas:</b> campo que identifica a quantidade de vagas disponíveis no momento;<br>
-<b>valorHora:</b> campo que armazena o valor/hora do estacionamento;<br>
-<b>latitude:</b> campo que armazena a latitude do estacionamento;<br>
-<b>longitude:</b> campo que armazena a longitude do estacionamento.<br>
+- <b>id:</b> campo que identifica o estacionamento;<br>
+- <b>nome:</b> campo que armazena o nome do estacionamento (para visualização no aplicativo;<br>
+- <b>qntVagas:</b> campo que identifica a quantidade de vagas disponíveis no momento;<br>
+- <b>valorHora:</b> campo que armazena o valor/hora do estacionamento;<br>
+- <b>latitude:</b> campo que armazena a latitude do estacionamento;<br>
+- <b>longitude:</b> campo que armazena a longitude do estacionamento.<br>
 
 <b>Vaga:</b> tabela que armazena informações da vaga de um estacionamento.<br>
-<b>id:</b> campo que identifica a vaga em questão;<br>
-<b>andar:</b> campo que identifica o andar da vaga;<br>
-<b>numero:</b> campo que armazena o número da vaga;<br>
-<b>status:</b> campo que armazena o status da vaga (livre ou ocupada);<br>
-<b>latitude:</b> campo que armazena a latitude da vaga;<br>
-<b>longitude:</b> campo que armazena a longitude da vaga.<br>
+- <b>id:</b> campo que identifica a vaga em questão;<br>
+- <b>andar:</b> campo que identifica o andar da vaga;<br>
+- <b>numero:</b> campo que armazena o número da vaga;<br>
+- <b>latitude:</b> campo que armazena a latitude da vaga;<br>
+- <b>longitude:</b> campo que armazena a longitude da vaga.<br>
 
 <b>Veículo:</b> tabela que armazena as informações do veículo.<br>
-<b>modelo:</b> campo que identifica o modelo do veículo;<br>
-<b>marca:</b> campo que identifica a marca do veículo;<br>
-<b>ano:</b> campo que identifica o ano do veículo;<br>
-<b>placa:</b> campo que identifica a placa do veículo;<br>
-<b>nome:</b> campo que identifica o nome do veículo;<br>
+- <b>modelo:</b> campo que identifica o modelo do veículo;<br>
+- <b>marca:</b> campo que identifica a marca do veículo;<br>
+- <b>ano:</b> campo que identifica o ano do veículo;<br>
+- <b>placa:</b> campo que identifica a placa do veículo;<br>
 
 <b>Motorista:</b> tabela que armazena as informações dos motoristas.<br>
-<b>creditos:</b> campo que armazena os créditos do motorista;<br>
-<b>cnh:</b> campo que armazena o número da CNH do motorista.<br>
+- <b>creditos:</b> campo que armazena os créditos do motorista;<br>
+- <b>cnh:</b> campo que armazena o número da CNH do motorista.<br>
 
-<b>Entrada_saida:</b> tabela que armazena os horários de entrada e saída dos veículos no estacionamento.<br>
-<b>id:</b> campo que identifica os horários cadastrados;<br>
-<b>horaChegada:</b> campo que identifica o horário de chegada do veículo;<br>
-<b>horaSaida:</b> campo que identifica o horário de saída do veículo;<br>
-<b>dataEntrada:</b> campo que identifica a data na chegada do veículo;<br>
-<b>dataSaida:</b> campo que identifica a data na saída do veículo;<br>
+<b>Pagamento_Estacionamento:</b> tabela que armazena as informações dos pagamentos efetuados pelos motoristas.<br>
+- <b>id:</b> campo que identifica o pagamento realizado pelo motorista;<br>
+- <b>valor:</b> campo que armazena o valor do pagamento;<br>
+- <b>data:</b> campo que armazena a data do pagamento .<br>
+
+<b>Recarga:</b> tabela que armazena as recargas efetuadas pelos motoristas.<br>
+- <b>id:</b> campo que identifica a recarga realizada;<br>
+- <b>valor:</b> campo que armazena o valor da recarga realizada;<br>
+
+<b>Forma_Pagamento:</b> tabela que armazena as informações em comum das formas de pagamento disponíveis para os motoristas.<br>
+- <b>id:</b> campo que identifica a forma de pagamento;<br>
+
+<b>Cartao:</b> tabela que armazena as informações dos cartões dos clientes.<br>
+- <b>numero:</b> campo que armazena o número do cartão do cliente;<br>
+- <b>bandeira:</b> campo que armazena a bandeira do cartão;<br>
+- <b>numParcelas:</b> campo que armazena o número de parcelas escolhido pelo cliente na recarga;<br>
+
+<b>Tipo_Cartao:</b> tabela que armazena os tipos de cartões.<br>
+- <b>id:</b> campo que identifica o tipo do cartão armazenada;<br>
+- <b>descricao:</b> campo que descreve o tipo do cartão (crédito ou débito);<br>
+
+<b>Paypal:</b> tabela que armazena a identificação da conta Paypal cadastrada pelo motorista.<br>
+- <b>conta:</b> campo que armazena a conta Paypal do motorista;<br>
 
 <b>Endereco:</b> tabela que armazena os endereços dos estacionamentos cadastrados.<br>
-<b>id:</b> campo que identifica de qual estacionamento o endereço se refere;<br>
-<b>cep:</b> campo que armazena o cep do estacionamento cadastrado;<br>
-<b>rua:</b> campo que armazena a rua do estacionamento cadastrado;<br>
-<b>complemento:</b> campo que armazena o complemento do endereço;<br>
+- <b>id:</b> campo que identifica um endereço;<br>
+- <b>cep:</b> campo que armazena o cep do estacionamento cadastrado;<br>
+- <b>logradouro:</b> campo que armazena o logradouro (rua) do estacionamento cadastrado;<br>
+- <b>complemento:</b> campo que armazena o complemento do endereço;<br>
 
 <b>Bairro:</b> tabela que armazena todos os bairros dos estacionamentos cadastrados.
 <b>id:</b> campo que identifica o bairro cadastrado;<br>
 <b>nome:</b> campo que armazena o nome do bairro cadastrado.<br>
-<b>Cidade:</b> tabela que armazena todas as cidades dos estacionamentos cadastrados.
-<b>id:</b> campo que identifica a cidade cadastrada;<br>
-<b>nome:</b> campo que armazena o nome da cidade cadastrada.<br>
-<b>Estado:</b> tabela que armazena todos os estados dos estacionamentos cadastrados.
-<b>id:</b> campo que identifica o estado cadastrado;<br>
-<b>nome:</b> campo que armazena o nome do estado cadastrado.<br>
 
-<b>Contato:</b> tabela que armazena os contatos dos clientes cadastrados.<br>
-<b>id:</b> campo que identifica o contato que foi armazenado;<br>
-<b>telefone1:</b> campo que armazena o telefone principal de contato;<br>
-<b>telefone2:</b> campo que armazena o telefone secundário de contato;<br>
-<b>email:</b> campo que armazena o email da pessoa;<br>
+<b>Cidade:</b> tabela que armazena todas as cidades dos estacionamentos cadastrados.
+- <b>id:</b> campo que identifica a cidade cadastrada;<br>
+- <b>nome:</b> campo que armazena o nome da cidade cadastrada.<br>
+
+<b>Estado:</b> tabela que armazena todos os estados dos estacionamentos cadastrados.
+- <b>id:</b> campo que identifica o estado cadastrado;<br>
+- <b>nome:</b> campo que armazena o nome do estado cadastrado.<br>
 
 
 ### 6	MODELO LÓGICO<br>
