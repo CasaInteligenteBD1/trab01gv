@@ -342,7 +342,7 @@ Latitude e longitude foram separadas para as tabelas Estacionamento e Vaga pois 
 
     5 - 
     SELECT * FROM funcionario WHERE datademissao BETWEEN dataadmissao AND CURRENT_DATE;
-    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.3/9_3_a_5.PNG?raw=true "9_3_a_5.PNG")
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.3/9_3_a_5.PNG?raw=true "9_3_a_5.PNG")
 
     b) Criar no mínimo 3 consultas com operadores aritméticos:
     1 -
