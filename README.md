@@ -261,64 +261,84 @@ Latitude e longitude foram separadas para as tabelas Estacionamento e Vaga pois 
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
    ![SQL 9.1](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/9.1.sql?raw=truee "Arquivo SQL da seção 9.1")
      
-      1) Tabela Pessoa:
+    1 - Tabela Pessoa:
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.1/TabelaPessoa.PNG)
    
-    2) Tabela Pessoa Fisica:
+    2 - Tabela Pessoa Fisica:
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.1/TabelaPessoaFisica.PNG)
    
-    3) Tabela Pessoa Juridica:
+    3 - Tabela Pessoa Juridica:
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.1/tabelaPessoaJuridica.PNG)
    
-    4) Tabela Funcionario:
+    4 - Tabela Funcionario:
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.1/tabelaFuncionario.PNG)
    
-    5) Tabela Motorista:
+    5 - Tabela Motorista:
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.1/tabelaMotorista.PNG)
    
-    6) Tabela Cargo:
+    6 - Tabela Cargo:
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.1/TabelaCargo.PNG)
    
-    7) Tabela Veiculo:
+    7 - Tabela Veiculo:
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.1/TabelaVeiculo.PNG)
    
-    8) Tabela Estacionamento:
+    8 - Tabela Estacionamento:
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.1/tabelaEstacionamento.PNG)
    
-    9) Tabela Endereço:
+    9 - Tabela Endereço:
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.1/TabelaEndereco.PNG)
    
-    10) Tabela Estado:
+    10 - Tabela Estado:
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.1/TabelaEstado.PNG)
    
-    11) Tabela Cidade:
+    11 - Tabela Cidade:
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.1/TabelaCidade.PNG)
    
-    12) Tabela Bairro:
+    12 - Tabela Bairro:
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.1/TabelaBairro.PNG)
    
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 [SQL 9.2](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/9_2.sql "Arquivo SQL da seção 9.2")
 
-     1) SELECT id, numero, andar, status, fk_estacionamento_id FROM vaga WHERE status = 'ocupada': 
+     1 -
+     SELECT id, numero, andar, status, fk_estacionamento_id FROM vaga WHERE status = 'ocupada': 
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print-Tela%209.2%20-%20ATT%2002-07/9_2_1.png?raw=true)
    
-     2) SELECT id, nome AS Estacionamento, valorhora FROM estacionamento WHERE CAST(valorhora AS numeric) <= 10;
+     2 -
+     SELECT id, nome AS Estacionamento, valorhora FROM estacionamento WHERE CAST(valorhora AS numeric) <= 10;
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print-Tela%209.2%20-%20ATT%2002-07/9_2_2.png?raw=true)
    
-     3) SELECT nome AS Cidade from cidade WHERE fk_estado_id = 1;
+     3 -
+     SELECT nome AS Cidade from cidade WHERE fk_estado_id = 1;
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print-Tela%209.2%20-%20ATT%2002-07/9_2_3.png?raw=true)
    
-     4) SELECT * FROM funcionario WHERE fk_cargo_id = 1;
+     4 -
+     SELECT * FROM funcionario WHERE fk_cargo_id = 1;
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print-Tela%209.2%20-%20ATT%2002-07/9_2_4.png?raw=true)
    
-     5) SELECT * FROM reserva WHERE datareserva = '2018-04-22';
+     5 -
+     SELECT * FROM reserva WHERE datareserva = '2018-04-22';
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print-Tela%209.2%20-%20ATT%2002-07/9_2_5.png?raw=true)
    
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)<br>
 [SQL 9.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/9.3.sql "Arquivo SQL da seção 9.3")
 
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e NOT:
+    1 -
+    SELECT * FROM veiculo WHERE ano>2000 and ano<2010;
+    
+    2 -
+    SELECT * FROM bairro where NOT (fk_cidade_id=1 OR fk_cidade_id=2);
+    
+    3 -
+    SELECT * FROM bairro WHERE nome LIKE 'S%' OR nome LIKE 'C%';
+    
+    4 - 
+    SELECT * FROM reserva WHERE datareserva BETWEEN '2018-04-06' and '2018-04-21';
+
+    5 - 
+    SELECT * FROM funcionario WHERE datademissao BETWEEN dataadmissao AND CURRENT_DATE;
+
     
     b) Criar no mínimo 3 consultas com operadores aritméticos:
     1 -
@@ -355,31 +375,36 @@ Latitude e longitude foram separadas para as tabelas Estacionamento e Vaga pois 
    ![select 9.3.c.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.3/9_3_c_3.PNG?raw=true "9_3_c_3.PNG")
     
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
-     a)
-    1) SELECT * FROM cidade as c WHERE c.nome LIKE 'V%';
+    a)
+    1 -
+    SELECT * FROM cidade as c WHERE c.nome LIKE 'V%';
   ![select 9.4.a.1](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/9.4_a_1.PNG)
   
-    2) SELECT * FROM veiculo WHERE marca ILIKE 'F%';
+    2 -
+    SELECT * FROM veiculo WHERE marca ILIKE 'F%';
   ![select 9.4.a.2](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/9.4_a_2.PNG)  
     
-    3)SELECT logradouro FROM endereco as ende WHERE ende.logradouro ILIKE 'Rua%';
+    3 -
+    SELECT logradouro FROM endereco as ende WHERE ende.logradouro ILIKE 'Rua%';
   ![select 9.4.a.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/9.4_a_3.PNG)
     
-    4) SELECT logradouro FROM endereco as ende WHERE ende.logradouro ILIKE 'Travessa%';
+    4 -
+    SELECT logradouro FROM endereco as ende WHERE ende.logradouro ILIKE 'Travessa%';
   ![select 9.4.a.4](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/4.PNG)
   
-    5) SELECT nome FROM estacionamento WHERE longitude LIKE '46.0%';
+    5 - 
+    SELECT nome FROM estacionamento WHERE longitude LIKE '46.0%';
   ![select 9.4.a.5](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/5.PNG)
   
     b)  
     Obs: current_date = 11/06/2018
-    1) Função SELECT current_date:  SELECT current_date - ('2009-08-23') AS "diasEmpregado";
+    1 - Função SELECT current_date:  SELECT current_date - ('2009-08-23') AS "diasEmpregado";
   ![select 9.4.b.1](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/6.PNG)
   
-    2) Função age: SELECT age(current_date,'2009-08-23');
+    2 - Função age: SELECT age(current_date,'2009-08-23');
   ![select 9.4.b.2](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%20Tabelas%20-%209.4/7.PNG)
   
-    3) Função extract e date_part - 
+    3 - Função extract e date_part: 
     SELECT datademissao,
     EXTRACT(year from datademissao) 
     FROM funcionario;
@@ -394,45 +419,41 @@ Latitude e longitude foram separadas para as tabelas Estacionamento e Vaga pois 
     
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
 
-    1) UPDATE pessoa SET senha = 'novaSenha' WHERE id = 4;
-    
-
+    1-
+    UPDATE pessoa SET senha = 'novaSenha' WHERE id = 4;
    ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/antes-1_9.5.PNG)
     
    ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/despois-1_9.5.PNG)
     
-    2) UPDATE funcionario SET datademissao = '2018-07-02' WHERE matricula = '222222';
-
+    2 -
+    UPDATE funcionario SET datademissao = '2018-07-02' WHERE matricula = '222222';
    ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/antes-2_9.5.PNG)
-    
    ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/depois-2_9.5.PNG)
     
-    3) UPDATE estacionamento SET valorhora = 12.0 WHERE id = 2;
-   
+    3 -
+    UPDATE estacionamento SET valorhora = 12.0 WHERE id = 2;
    ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/antes-3_9.5.PNG)
-    
    ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/despois-3_9.5.PNG)
 
-    4) DELETE FROM funcionario WHERE matricula = '222222';
-    
+    4 -
+    DELETE FROM funcionario WHERE matricula = '222222';
    ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/antes-2_9.5.PNG)
-   
    ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/depois-2Delete_9.5.PNG)
    
-    5) DELETE FROM reserva WHERE id = 2;
-    
+    5 -
+    DELETE FROM reserva WHERE id = 2;
    ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/antes_4d_9.5.PNG)
-    
    ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/depois_4d_9.5.PNG)
    
-    6) DELETE FROM veiculo_motorista WHERE fk_veiculo_id = 17;
-    
+    6 -
+    DELETE FROM veiculo_motorista WHERE fk_veiculo_id = 17;
    ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/antes_5d_9.5.PNG)
-    
    ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/depois_5d_9.5.PNG)
+   
 
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
     a) Uma junção que envolva todas as tabelas possuindo no mínimo 3 registros no resultado:
+    1 -
     SELECT ES.nome, PJ.cnpj "CNPJ da empresa", COUNT(V)
     FROM reserva RS
     JOIN motorista M ON RS.fk_motorista_fk_pessoa_fisica_fk_pessoa_id = M.fk_pessoa_fisica_fk_pessoa_id
@@ -448,6 +469,7 @@ Latitude e longitude foram separadas para as tabelas Estacionamento e Vaga pois 
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.6/9_6_1.png?raw=true)
         
     b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho:
+    1 -
     SELECT es.nome "Estacionamento", b.nome "Bairro", est.nome "Estado", COUNT(v) "Total Vagas" FROM estacionamento es
     JOIN endereco en ON en.id = es.fk_endereco_id
     JOIN bairro b ON b.id = en.fk_bairro_id
@@ -457,14 +479,16 @@ Latitude e longitude foram separadas para as tabelas Estacionamento e Vaga pois 
     GROUP BY es.nome,b.nome, est.nome
     ORDER BY es.nome, "Total Vagas" DESC;
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.6/9_6_2.png?raw=true)
-        
+   
+    2 -
     SELECT DISTINCT P.nome, V.modelo, V.placa from veiculo_motorista AS VM
     JOIN veiculo AS V ON V.id = VM.fk_veiculo_id
     JOIN motorista AS M ON M.fk_pessoa_fisica_fk_pessoa_id = VM.fk_motorista_fk_pessoa_fisica_fk_pessoa_id
     JOIN pessoa AS P ON P.id = M.fk_pessoa_fisica_fk_pessoa_id
     Order by P.nome, V.modelo;
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.6/9_6_3.png?raw=true)
-        
+   
+    3 -
     SELECT DISTINCT P.nome "Motorista", VE.modelo "Modelo carro", R.datareserva "Data da Reserva"
     FROM reserva R
     JOIN veiculo AS VE ON VE.id = R.fk_veiculo_id
@@ -472,7 +496,8 @@ Latitude e longitude foram separadas para as tabelas Estacionamento e Vaga pois 
     JOIN pessoa AS P ON P.id = M.fk_pessoa_fisica_fk_pessoa_id
     Order by R.datareserva DESC;
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.6/9_6_4.png?raw=true)
-        
+    
+    4 -
     SELECT ES.nome "Estacionamento", V.numero "Num da vaga", V.andar"Andar", COUNT(R) "Vezes de utilização"
     FROM estacionamento ES
     JOIN vaga V ON V.fk_estacionamento_id = ES.id
@@ -480,7 +505,8 @@ Latitude e longitude foram separadas para as tabelas Estacionamento e Vaga pois 
     GROUP BY ES.nome, V.numero, V.andar
     ORDER BY ES.nome;
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.6/9_6_5.png?raw=true)
-        
+    
+    5 -
     SELECT P.nome "Motorista", R.datareserva "Data da Reserva", R.horasaida - R.horareserva "Tempo de permanência", E.nome "Estacionamento"
     FROM reserva R
     JOIN motorista M ON R.fk_motorista_fk_pessoa_fisica_fk_pessoa_id = m.fk_pessoa_fisica_fk_pessoa_id
