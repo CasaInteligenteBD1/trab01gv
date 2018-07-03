@@ -535,11 +535,10 @@ Latitude e longitude foram separadas para as tabelas Estacionamento e Vaga pois 
     
 Verificado pelo Grupo [EasyMarket](https://github.com/rfidmarket/trab01): Antonio, Jennifer, Joel e Larissa.
 
-### 12	TUTORIAL COMPLETO DE PASSOS PARA RESTAURACAO DO BANCO E EXECUCAO DE PROCEDIMENTOS ENVOLVIDOS NO TRABALHO PARA OBTENÇÃO DOS RESULTADOS<br>
-        a) Outros grupos deverão ser capazes de restaurar o banco 
-        b) executar todas as consultas presentes no trabalho
-        c) executar códigos que tenham sido construídos para o trabalho 
-        d) realizar qualquer procedimento executado pelo grupo que desenvolveu o trabalho
+### 12	TUTORIAL COMPLETO DE PASSOS PARA RESTAURACAO DO BANCO E EXECUCAO DE PROCEDIMENTOS ENVOLVIDOS NO TRABALHO PARA OBTENÇÃO DOS RESULTADOS<br><br>
+
+![Tutorial Restauração BACKUP](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/Tutorial%20-%20Restauracao%20BACKUP.pdf)
+  
         
 ### 13   DIFICULDADES ENCONTRADAS PELO GRUPO<br>
 >## Marco de Entrega Final em: (25/06/2018)<br>
