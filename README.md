@@ -326,20 +326,24 @@ Latitude e longitude foram separadas para as tabelas Estacionamento e Vaga pois 
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e NOT:
     1 -
     SELECT * FROM veiculo WHERE ano>2000 and ano<2010;
-    
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.3/9_3_a_1.PNG?raw=true "9_3_a_1.PNG")
+   
     2 -
     SELECT * FROM bairro where NOT (fk_cidade_id=1 OR fk_cidade_id=2);
-    
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.3/9_3_a_2.PNG?raw=true "9_3_a_2.PNG")
+   
     3 -
     SELECT * FROM bairro WHERE nome LIKE 'S%' OR nome LIKE 'C%';
-    
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.3/9_3_a_3.PNG?raw=true "9_3_a_3.PNG")
+   
     4 - 
     SELECT * FROM reserva WHERE datareserva BETWEEN '2018-04-06' and '2018-04-21';
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.3/9_3_a_4.PNG?raw=true "9_3_a_4.PNG")
 
     5 - 
     SELECT * FROM funcionario WHERE datademissao BETWEEN dataadmissao AND CURRENT_DATE;
+    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.3/9_3_a_5.PNG?raw=true "9_3_a_5.PNG")
 
-    
     b) Criar no mínimo 3 consultas com operadores aritméticos:
     1 -
     SELECT p.id, p.nome "Motorista", r.horareserva, r.horasaida, r.horasaida - r.horareserva "Tempo de permanência" FROM reserva r
