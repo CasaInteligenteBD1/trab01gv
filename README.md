@@ -121,6 +121,8 @@ De uma empresa de estacionamentos, serão armazenados nome, telefone, email e CN
 
 Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma reserva de vaga, deve pagar, no momento que a faz, o valor de uma hora de utilização do estacionamento. O que garante a utilização da vaga também por uma hora para o motorista.<br>
 
+Latitude e longitude foram separadas para as tabelas Estacionamento e Vaga pois estacionamentos guardarão coordenadas de GPS reais e as vagas guardarão coordenadas em pixels de uma imagem que representará as vagas de um estacionamento.
+
 >## Marco de Entrega 02 em: (23/04/2018)<br>
 
 
@@ -430,8 +432,59 @@ Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma rese
    ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/depois_5d_9.5.PNG)
 
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
-        a) Uma junção que envolva todas as tabelas possuindo no mínimo 3 registros no resultado
-        b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
+    a) Uma junção que envolva todas as tabelas possuindo no mínimo 3 registros no resultado:
+        SELECT ES.nome, PJ.cnpj "CNPJ da empresa", COUNT(V)
+        FROM reserva RS
+        JOIN motorista M ON RS.fk_motorista_fk_pessoa_fisica_fk_pessoa_id = M.fk_pessoa_fisica_fk_pessoa_id
+        JOIN pessoa_fisica PF ON M.fk_pessoa_fisica_fk_pessoa_id = PF.fk_pessoa_id
+        JOIN pessoa P ON PF.fk_pessoa_id = P.id
+        JOIN vaga V ON V.id = RS.fk_vaga_id
+        JOIN estacionamento ES ON ES.id = V.fk_estacionamento_id
+        JOIN pessoa_juridica PJ ON PJ.fk_pessoa_id = ES.fk_pessoa_juridica_fk_pessoa_id
+        JOIN endereco EN ON EN.id = ES.fk_endereco_id
+        WHERE PJ.fk_pessoa_id in (SELECT pessoa.id FROM pessoa)
+        GROUP BY ES.nome, PJ.cnpj
+        ORDER BY ES.nome;
+        ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.6/9_6_1.png?raw=true)
+        
+    b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho:
+        SELECT es.nome "Estacionamento", b.nome "Bairro", est.nome "Estado", COUNT(v) "Total Vagas" FROM estacionamento es
+        JOIN endereco en ON en.id = es.fk_endereco_id
+        JOIN bairro b ON b.id = en.fk_bairro_id
+        JOIN cidade c ON c.id = b.fk_cidade_id
+        JOIN estado est ON est.id = c.fk_estado_id
+        JOIN vaga v ON v.fk_estacionamento_id = es.id
+        GROUP BY es.nome,b.nome, est.nome
+        ORDER BY es.nome, "Total Vagas" DESC;
+        ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.6/9_6_2.png?raw=true)
+        
+        SELECT DISTINCT P.nome, V.modelo, V.placa from veiculo_motorista AS VM
+        JOIN veiculo AS V ON V.id = VM.fk_veiculo_id
+        JOIN motorista AS M ON M.fk_pessoa_fisica_fk_pessoa_id = VM.fk_motorista_fk_pessoa_fisica_fk_pessoa_id
+        JOIN pessoa AS P ON P.id = M.fk_pessoa_fisica_fk_pessoa_id
+        Order by P.nome, V.modelo;
+        ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.6/9_6_3.png?raw=true)
+        
+        SELECT DISTINCT P.nome, VE.modelo, R.datareserva from reserva AS R
+        JOIN veiculo AS VE ON VE.id = R.fk_veiculo_id
+        JOIN motorista AS M ON M.fk_pessoa_fisica_fk_pessoa_id = R.fk_motorista_fk_pessoa_fisica_fk_pessoa_id
+        JOIN pessoa AS P ON P.id = M.fk_pessoa_fisica_fk_pessoa_id
+        Order by R.datareserva DESC
+        ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.6/9_6_4.png?raw=true)
+        
+        SELECT...
+        ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.6/9_6_5.png?raw=true)
+        
+        SELECT P.nome "Motorista", R.datareserva, R.horasaida - R.horareserva "Tempo de permanência", E.nome FROM reserva R
+        JOIN motorista M ON R.fk_motorista_fk_pessoa_fisica_fk_pessoa_id = m.fk_pessoa_fisica_fk_pessoa_id
+        JOIN pessoa P ON M.fk_pessoa_fisica_fk_pessoa_id = P.id
+        JOIN vaga V ON V.id = R.fk_vaga_id
+        JOIN estacionamento E ON E.id = V.fk_estacionamento_id
+        ORDER BY R.datareserva DESC
+        ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.6/9_6_6.png?raw=true)
+        
+        
+        
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
