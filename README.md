@@ -531,7 +531,7 @@ Latitude e longitude foram separadas para as tabelas Estacionamento e Vaga pois 
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO FINAL (Mínimo 6 e Máximo 10)<br>
 
 ### 11 Backup completo do banco de dados postgres
-![BACKUP](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/8.2.sql?raw=truee)
+![BACKUP](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/estaciona.backup)
     
 Verificado pelo Grupo [EasyMarket](https://github.com/rfidmarket/trab01): Antonio, Jennifer, Joel e Larissa.
 
