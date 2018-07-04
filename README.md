@@ -525,8 +525,38 @@ Latitude e longitude foram separadas para as tabelas Estacionamento e Vaga pois 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
-        a) Uma junção que envolva Self Join
-        b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
+    CREATE VIEW vwVagasLivre AS 
+    SELECT V.numero "Número da Vaga", EST.nome "Nome do Estacionamento"
+    FROM bairro B
+    JOIN endereco EN ON EN.fk_bairro_id = b.id
+    JOIN estacionamento EST ON EST.fk_endereco_id = EN.id
+    JOIN cidade cid ON CID.id = B.fk_cidade_id
+    JOIN vaga V ON V.fk_estacionamento_id = EST.id
+    WHERE V.status = 'livre'
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%209.9/Print_9_9_1.PNG?raw=true)
+   
+    CREATE VIEW vwQntVagasLivre AS
+    SELECT ES.nome, COUNT(V.id) "Qntd vagas livres" FROM bairro B
+    JOIN endereco EN ON EN.fk_bairro_id = B.id
+    JOIN estacionamento ES ON ES.fk_endereco_id = EN.id
+    JOIN cidade C ON C.id = B.fk_cidade_id
+    JOIN vaga V ON V.fk_estacionamento_id = ES.id
+    WHERE V.status = 'livre'
+    GROUP BY ES.nome
+    ORDER BY COUNT(V.id) DESC
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%209.9/Print_9_9_2.PNG?raw=true)
+   
+    SELECT count("Qntd vagas livres") "Total de vagas livres"
+    FROM vwQntVagasLivre
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%209.9/Print_9_9_3.PNG?raw=true)
+   
+    SELECT count(distinct "Nome do Estacionamento") "Estacionamentos com vagas disponíveis"
+    FROM vwVagasLivre
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%209.9/Print_9_9_4.PNG?raw=true)
+   
+
+
+
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
     SELECT est.nome "Estabelecimento", cid.nome "Cidade", b.nome "Bairro" 
     FROM bairro b
