@@ -529,6 +529,12 @@ Latitude e longitude foram separadas para as tabelas Estacionamento e Vaga pois 
         RIGHT JOIN pessoa_fisica as pef 
         ON pe.id = pef.fk_pessoa_id;
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20Telas%20-%209.8/1.PNG?raw=true)
+   
+        SELECT pef.cpf, moto.creditos FROM
+        pessoa_fisica as pef 
+        RIGHT JOIN motorista as moto
+        ON pef.fk_pessoa_id = moto.fk_pessoa_fisica_fk_pessoa_id
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20Telas%20-%209.8/2.PNG?raw=true)
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
     CREATE VIEW vwVagasLivre AS 
     SELECT V.numero "Número da Vaga", EST.nome "Nome do Estacionamento"
