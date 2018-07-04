@@ -524,6 +524,11 @@ Latitude e longitude foram separadas para as tabelas Estacionamento e Vaga pois 
         
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
+        SELECT pe.nome, pe.email FROM
+        pessoa as pe 
+        RIGHT JOIN pessoa_fisica as pef 
+        ON pe.id = pef.fk_pessoa_id;
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20Telas%20-%209.8/1.PNG?raw=true)
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
     CREATE VIEW vwVagasLivre AS 
     SELECT V.numero "Número da Vaga", EST.nome "Nome do Estacionamento"
