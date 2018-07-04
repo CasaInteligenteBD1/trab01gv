@@ -528,6 +528,33 @@ Latitude e longitude foram separadas para as tabelas Estacionamento e Vaga pois 
         a) Uma junção que envolva Self Join
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
+    SELECT est.nome "Estabelecimento", cid.nome "Cidade", b.nome "Bairro" 
+    FROM bairro b
+    JOIN endereco e ON e.fk_bairro_id = b.id
+    JOIN estacionamento est ON est.fk_endereco_id = e.id
+    JOIN cidade cid ON b.fk_cidade_id = cid.id
+    WHERE cid.nome IN('Vila Velha', 'Vitória', 'Serra')
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%209.10/Print9_10_1.PNG?raw=true)
+   
+    SELECT pes.nome "Cliente", vei.modelo "Carro", res.datareserva "Data da reserva"
+    FROM veiculo vei
+    JOIN veiculo_motorista vm ON vm.fk_veiculo_id = vei.id
+    JOIN motorista mot ON mot.fk_pessoa_fisica_fk_pessoa_id = vm.fk_motorista_fk_pessoa_fisica_fk_pessoa_id
+    JOIN pessoa pes ON pes.id = mot.fk_pessoa_fisica_fk_pessoa_id
+    JOIN reserva res ON res.fk_veiculo_id = vei.id
+    WHERE res.datareserva IN('2018-04-22')
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%209.10/Print9_10_2.PNG?raw=true)
+   
+    SELECT est.nome "Nome do estacionamento", v.numero "Número da vaga"
+    FROM bairro b
+    JOIN endereco e ON e.fk_bairro_id = b.id
+    JOIN estacionamento est ON est.fk_endereco_id = e.id
+    JOIN cidade cid ON cid.id = b.fk_cidade_id
+    JOIN vaga v ON v.fk_estacionamento_id = est.id
+    WHERE v.status IN('livre') AND cid.nome IN('Vila Velha', 'Vitória', 'Serra')
+    ORDER BY est.nome, v.numero
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%209.10/Print9_10_3.PNG?raw=true)
+
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO FINAL (Mínimo 6 e Máximo 10)<br>
 
 ### 11 Backup completo do banco de dados postgres
