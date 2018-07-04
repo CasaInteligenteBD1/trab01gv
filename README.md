@@ -524,6 +524,8 @@ Latitude e longitude foram separadas para as tabelas Estacionamento e Vaga pois 
         
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
+[SQL 9.8](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/9.8.sql "Arquivo SQL da seção 9.8")
+
      SELECT pe.nome, pe.email FROM
      pessoa as pe 
      RIGHT JOIN pessoa_fisica as pef 
