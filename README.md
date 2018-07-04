@@ -524,23 +524,29 @@ Latitude e longitude foram separadas para as tabelas Estacionamento e Vaga pois 
         
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
-        SELECT pe.nome, pe.email FROM
-        pessoa as pe 
-        RIGHT JOIN pessoa_fisica as pef 
-        ON pe.id = pef.fk_pessoa_id;
+     SELECT pe.nome, pe.email FROM
+     pessoa as pe 
+     RIGHT JOIN pessoa_fisica as pef 
+     ON pe.id = pef.fk_pessoa_id;
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20Telas%20-%209.8/1.PNG?raw=true)
    
-        SELECT pef.cpf, moto.creditos FROM
-        pessoa_fisica as pef 
-        RIGHT JOIN motorista as moto
-        ON pef.fk_pessoa_id = moto.fk_pessoa_fisica_fk_pessoa_id
+     SELECT pef.cpf, moto.creditos FROM
+     pessoa_fisica as pef 
+     RIGHT JOIN motorista as moto
+     ON pef.fk_pessoa_id = moto.fk_pessoa_fisica_fk_pessoa_id
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20Telas%20-%209.8/2.PNG?raw=true)
         
-        SELECT pej.cnpj, est.nome FROM
-        pessoa_juridica as pej 
-        LEFT JOIN estacionamento as est
-        ON pej.fk_pessoa_id = est.fk_pessoa_juridica_fk_pessoa_id
+     SELECT pej.cnpj, est.nome FROM
+     pessoa_juridica as pej 
+     LEFT JOIN estacionamento as est
+     ON pej.fk_pessoa_id = est.fk_pessoa_juridica_fk_pessoa_id
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20Telas%20-%209.8/3.PNG?raw=true)
+   
+    SELECT pe.nome, pej.cnpj, pe.email FROM
+    pessoa_juridica as pej
+    LEFT JOIN pessoa as pe 
+    ON pej.fk_pessoa_id = pe.id
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20Telas%20-%209.8/4.PNG?raw=true)
    
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
     CREATE VIEW vwVagasLivre AS 
