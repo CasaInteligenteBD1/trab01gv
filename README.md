@@ -65,11 +65,10 @@ De uma empresa de estacionamentos, serão armazenados nome, telefone, email e CN
 <b>Link do protótipo:</b> ![Protótipo EstacIonA](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/prototipoTelasEstaciona.pdf)<br>
 
 #### 4.1 TABELA DE DADOS DO SISTEMA:
-![Tabela de dados v0.1](https://github.com/GrupoDaVaga/trab01/blob/master/arquivos/4_1_tabela_de_dados_estacIonA.xlsx?raw=true)<br>
+![Tabela de dados v0.1](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/4_1_tabela_de_dados_estacIonA.xlsx)<br>
 ![Tabelas de dados v0.2](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/tabela_dividida.xlsx)
 
-    
-    
+
 #### 4.2 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?<br>
    > O sistema fornecerá relatórios sobre a vaga que foi reservada e as informações do cliente, da empresa responsável pela vaga, da reserva (preço, data) e do veículo do cliente. Os principais relatórios obtidos são: <br><br>
     - Vagas disponíveis;<br>
@@ -122,6 +121,8 @@ De uma empresa de estacionamentos, serão armazenados nome, telefone, email e CN
 Foi determinado, junto ao cliente, que qualquer motorista, para efetuar uma reserva de vaga, deve pagar, no momento que a faz, o valor de uma hora de utilização do estacionamento. O que garante a utilização da vaga também por uma hora para o motorista.<br>
 
 Latitude e longitude foram separadas para as tabelas Estacionamento e Vaga pois estacionamentos guardarão coordenadas de GPS reais e as vagas guardarão coordenadas em pixels de uma imagem que representará as vagas de um estacionamento.
+
+Foi decidido, por questões de escopo do projeto, que as tabelas FORMA_PAGAMENTO, CARTAO, PAYPAL e TIPO_CARTAO não serão implementadas devidamente. Ficando essas atualizações para uma futura modificação.
 
 >## Marco de Entrega 02 em: (23/04/2018)<br>
 
@@ -678,6 +679,23 @@ Verificado pelo Grupo [EasyMarket](https://github.com/rfidmarket/trab01): Antoni
   
         
 ### 13   DIFICULDADES ENCONTRADAS PELO GRUPO<br>
+<b>Escopo do projeto:</b>
+- O grupo teve dificuldades em finalizar todo o projeto devido a quantidade de tabelas. Devido ao tempo e experiência dos alunos envolvidos, o escopo foi considerado grande. Logo as tabelas FORMA_PAGAMENTO, CARTAO, PAYPAL e TIPO_CARTAO não foram implementadas devidamente.
+
+<b>Alterações no projeto:</b>
+- Alterações que eram feitas no documento de requisitos (disciplina de Análise de Sistemas) e algumas alterações que eram necessárias para o desenvolvimento (disciplina de Programação Orientada a Objetos 1) resultaram em alterações sistemáticas nos modelos conceitual, lógico e físico. O grupo teve dificuldades em registrar essas mudanças.
+
+- Atualmente, por mais que tenhamos auxílio de várias ferramentas para a comunicação, os integrantes do grupo tiveram dificuldade em manter o grupo atualizado com as decisões e alterações feitas no projeto.
+
+<b>Consultas SQL:</b>
+- Muitas consultas (SELECTs) foram pedidas ao longo do documento no GitHub. Num certo ponto do trabalho o grupo teve dificuldades em acrescentar consultas diferenciadas.
+
+<b>Outras disciplinas:</b>
+- Foi difícil conciliar todas as entregas de trabalhos e provas todas as disciplinas. Isso afetou no tempo para um maior aprendizado de cada uma delas, incluindo BD1.
+
+<b>Extra classe:</b>
+Isso ocorre também em outras disciplinas com vários alunos: os compromissos com estágio afetam no tempo e disposição de integrantes do grupo, sobrecarregando os demais integrantes, que já estão sobrecarregados devido às outras disciplinas.
+
 >## Marco de Entrega Final em: (25/06/2018)<br>
         
 ### 14  FORMATACAO NO GIT: https://help.github.com/articles/basic-writing-and-formatting-syntax/
