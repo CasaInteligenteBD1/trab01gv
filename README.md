@@ -694,7 +694,7 @@ Verificado pelo Grupo [EasyMarket](https://github.com/rfidmarket/trab01): Antoni
 - Foi difícil conciliar todas as entregas de trabalhos e provas todas as disciplinas. Isso afetou no tempo para um maior aprendizado de cada uma delas, incluindo BD1.
 
 <b>Extra classe:</b>
-Isso ocorre também em outras disciplinas com vários alunos: os compromissos com estágio afetam no tempo e disposição de integrantes do grupo, sobrecarregando os demais integrantes, que já estão sobrecarregados devido às outras disciplinas.
+- Isso ocorre também em outras disciplinas com vários alunos: os compromissos com estágio afetam no tempo e disposição de integrantes do grupo, sobrecarregando os demais integrantes, que já estão sobrecarregados devido às outras disciplinas.
 
 >## Marco de Entrega Final em: (25/06/2018)<br>
         
