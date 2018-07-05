@@ -425,34 +425,34 @@ Latitude e longitude foram separadas para as tabelas Estacionamento e Vaga pois 
 
     1-
     UPDATE pessoa SET senha = 'novaSenha' WHERE id = 4;
-   ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/antes-1_9.5.PNG)
+   ![select 9.5.1.a](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/antes-1_9.5.PNG)
     
-   ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/despois-1_9.5.PNG)
+   ![select 9.5.1.d](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/despois-1_9.5.PNG)
     
     2 -
     UPDATE funcionario SET datademissao = '2018-07-02' WHERE matricula = '222222';
-   ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/antes-2_9.5.PNG)
-   ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/depois-2_9.5.PNG)
+   ![select 9.5.2.a](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/antes-2_9.5.PNG)
+   ![select 9.5.2.d](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/depois-2_9.5.PNG)
     
     3 -
     UPDATE estacionamento SET valorhora = 12.0 WHERE id = 2;
-   ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/antes-3_9.5.PNG)
-   ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/despois-3_9.5.PNG)
+   ![select 9.5.3.a](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/antes-3_9.5.PNG)
+   ![select 9.5.3.d](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/despois-3_9.5.PNG)
 
     4 -
     DELETE FROM funcionario WHERE matricula = '222222';
-   ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/antes-2_9.5.PNG)
-   ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/depois-2Delete_9.5.PNG)
+   ![select 9.5.4.a](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/antes-2_9.5.PNG)
+   ![select 9.5.4.d](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/depois-2Delete_9.5.PNG)
    
     5 -
     DELETE FROM reserva WHERE id = 2;
-   ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/antes_4d_9.5.PNG)
-   ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/depois_4d_9.5.PNG)
+   ![select 9.5.5.a](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/antes_4d_9.5.PNG)
+   ![select 9.5.5.d](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/depois_4d_9.5.PNG)
    
     6 -
     DELETE FROM veiculo_motorista WHERE fk_veiculo_id = 17;
-   ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/antes_5d_9.5.PNG)
-   ![select 9.4.b.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/depois_5d_9.5.PNG)
+   ![select 9.5.6.a](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/antes_5d_9.5.PNG)
+   ![select 9.5.6.d](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/9.5/depois_5d_9.5.PNG)
    
 
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Mínimo 6)<br>
@@ -523,32 +523,86 @@ Latitude e longitude foram separadas para as tabelas Estacionamento e Vaga pois 
         
         
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
+[SQL 9.7](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/9_7.sql "Arquivo SQL da seção 9.7")
+
+    1 - 
+    SELECT F.fk_cargo_id ,cargo.nome, count(fk_cargo_id) FROM funcionario F
+    JOIN cargo ON cargo.id = F.fk_cargo_id
+    GROUP BY F.fk_cargo_id, cargo.nome;
+   ![select 9.7.1](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.7/9_7_1.png?raw=true "9_7_1.png")
+    
+    2 - 
+    SELECT F.datademissao, count(*) FROM funcionario F
+    GROUP BY F.datademissao;
+   ![select 9.7.2](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.7/9_7_2.png?raw=true "9_7_2.png")
+    
+    3 - 
+    SELECT F.fk_cargo_id , C.nome, count(fk_cargo_id) FROM funcionario F
+    JOIN cargo C ON C.id = F.fk_cargo_id
+    GROUP BY F.fk_cargo_id, C.nome;
+   ![select 9.7.3](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.7/9_7_3.png?raw=true "9_7_3.png")
+
+    4 - 
+    SELECT P.nome, V.modelo, R.datareserva FROM veiculo_motorista VM
+    JOIN motorista M ON M.fk_pessoa_fisica_fk_pessoa_id = VM.fk_motorista_fk_pessoa_fisica_fk_pessoa_id
+    JOIN veiculo V ON V.id = VM.fk_veiculo_id
+    JOIN reserva R ON R.fk_motorista_fk_pessoa_fisica_fk_pessoa_id = M.fk_pessoa_fisica_fk_pessoa_id
+    JOIN pessoa P ON P.id = M.fk_pessoa_fisica_fk_pessoa_id
+    GROUP BY P.nome, V.modelo, R.datareserva
+    ORDER BY P.nome;
+   ![select 9.7.4](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.7/9_7_4.png?raw=true "9_7_4.png")
+   
+    5 - 
+    SELECT P.nome, R.horasaida - R.horareserva AS "tempo de permanência" FROM reserva R
+    JOIN vaga V ON V.id = R.fk_vaga_id
+    JOIN pessoa P ON P.id = R.fk_motorista_fk_pessoa_fisica_fk_pessoa_id
+    GROUP BY P.nome, R.horasaida, R.horareserva
+    HAVING R.horasaida - R.horareserva > '1:00:00';
+   ![select 9.7.5](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.7/9_7_5.png?raw=true "9_7_5.png")
+
+    6 - 
+    SELECT ES.nome, COUNT(V.id) "Qntd vagas livres" FROM bairro B
+    JOIN endereco EN ON EN.fk_bairro_id = B.id
+    JOIN estacionamento ES ON ES.fk_endereco_id = EN.id
+    JOIN cidade C ON C.id = B.fk_cidade_id
+    JOIN vaga V ON V.fk_estacionamento_id = ES.id
+    WHERE V.status = 'livre'
+    GROUP BY ES.nome
+    ORDER BY COUNT(V.id) DESC;
+   ![select 9.7.6](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20tabelas%20-%209.7/9_7_6.png?raw=true "9_7_6.png")
+
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
 [SQL 9.8](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/9.8.sql "Arquivo SQL da seção 9.8")
-
-     SELECT pe.nome, pe.email FROM
-     pessoa as pe 
-     RIGHT JOIN pessoa_fisica as pef 
-     ON pe.id = pef.fk_pessoa_id;
+    
+    1 - 
+    SELECT pe.nome, pe.email FROM
+    pessoa as pe 
+    RIGHT JOIN pessoa_fisica as pef 
+    ON pe.id = pef.fk_pessoa_id;
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20Telas%20-%209.8/1.PNG?raw=true)
    
-     SELECT pef.cpf, moto.creditos FROM
-     pessoa_fisica as pef 
-     RIGHT JOIN motorista as moto
-     ON pef.fk_pessoa_id = moto.fk_pessoa_fisica_fk_pessoa_id
+    2 - 
+    SELECT pef.cpf, moto.creditos FROM
+    pessoa_fisica as pef 
+    RIGHT JOIN motorista as moto ON pef.fk_pessoa_id = moto.fk_pessoa_fisica_fk_pessoa_id
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20Telas%20-%209.8/2.PNG?raw=true)
         
-     SELECT pej.cnpj, est.nome FROM
-     pessoa_juridica as pej 
-     LEFT JOIN estacionamento as est
-     ON pej.fk_pessoa_id = est.fk_pessoa_juridica_fk_pessoa_id
+    3 - 
+    SELECT pej.cnpj, est.nome FROM
+    pessoa_juridica as pej
+    LEFT JOIN estacionamento as est ON pej.fk_pessoa_id = est.fk_pessoa_juridica_fk_pessoa_id
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20Telas%20-%209.8/3.PNG?raw=true)
    
+    4 - 
     SELECT pe.nome, pej.cnpj, pe.email FROM
     pessoa_juridica as pej
     LEFT JOIN pessoa as pe 
     ON pej.fk_pessoa_id = pe.id
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Print%20Telas%20-%209.8/4.PNG?raw=true)
+   
+    5 - 
+    
+    6 - 
    
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
     CREATE VIEW vwVagasLivre AS 
