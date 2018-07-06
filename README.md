@@ -635,8 +635,20 @@ Foi decidido, por questões de escopo do projeto, que as tabelas FORMA_PAGAMENTO
     FROM vwVagasLivre
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%209.9/Print_9_9_4.PNG?raw=true)
    
-
-
+    create view vwFuncionariosAtivos as
+    select func.matricula "Matrícula", pes.nome "Nome do funcionário", func.dataadmissao "Admissão"
+    from pessoa pes
+    join funcionarios func on func.fk_pessoa_fisica_fk_pessoa_id = pes.id
+    where datademissao = null
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%209.9/Print_9_9_5.PNG?raw=true)
+    
+    create view vwEstacionamentosMaisBaratos as
+    select est.nome "Nome do estacionamento", pes.nome "Empresa", valorhora "Valor por hora", qntvagas "Quantidade de vagas" 
+    from estacionamento est
+    join pessoa_juridica pj on est.fk_pessoa_juridica_fk_pessoa_id = pj.id
+    join pessoa pes on pes.id = est.fk_pessoa_juridica_fk_pessoa_id
+    order by valorhora desc
+   ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%209.9/Print_9_9_6.PNG?raw=true)
 
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
     SELECT est.nome "Estabelecimento", cid.nome "Cidade", b.nome "Bairro" 
@@ -674,7 +686,6 @@ Foi decidido, por questões de escopo do projeto, que as tabelas FORMA_PAGAMENTO
 Verificado pelo Grupo [EasyMarket](https://github.com/rfidmarket/trab01): Antonio, Jennifer, Joel e Larissa.
 
 ### 12	TUTORIAL COMPLETO DE PASSOS PARA RESTAURACAO DO BANCO E EXECUCAO DE PROCEDIMENTOS ENVOLVIDOS NO TRABALHO PARA OBTENÇÃO DOS RESULTADOS<br><br>
-
 ![Tutorial Restauração BACKUP](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/arquivos/Tutorial%20-%20Restauracao%20BACKUP.pdf)
   
         
