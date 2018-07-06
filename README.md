@@ -638,8 +638,8 @@ Foi decidido, por questões de escopo do projeto, que as tabelas FORMA_PAGAMENTO
     create view vwFuncionariosAtivos as
     select func.matricula "Matrícula", pes.nome "Nome do funcionário", func.dataadmissao "Admissão"
     from pessoa pes
-    join funcionarios func on func.fk_pessoa_fisica_fk_pessoa_id = pes.id
-    where datademissao = null
+    join funcionario func on func.fk_pessoa_fisica_fk_pessoa_id = pes.id
+    where datademissao is not null;
    ![Alt text](https://github.com/CasaInteligenteBD1/trab01gv/blob/master/images/Prints%209.9/Print_9_9_5.PNG?raw=true)
     
     create view vwEstacionamentosMaisBaratos as
