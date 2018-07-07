@@ -110,8 +110,6 @@ De uma empresa de estacionamentos, serão armazenados nome, telefone, email e CN
         
 <b>Pessoa:</b> decidimos utilizar uma tabela “PESSOA” para armazenar as informações de todo cliente, seja ele uma pessoa física ou uma pessoa jurídica.<br>
 
-<b>Contato:</b> decidimos utilizar uma tabela “CONTATO”, para armazenar todos as formas de contato disponíveis para um cliente (site pessoal, telefone residencial, celular, etc.)<br>
-
 <b>Endereço:</b> decompomos o “ENDERECO” em  campos "estado", "cidade", "bairro", para seguir as regras de normalização.<br>
 
 <b>Pagamento:</b> dividimos o pagamento em dois momentos diferentes. Um é realizado logo após a reserva da vaga (“PAGAMENTO_RESERVA”) e o outro é realizado após sair do estacionamento, caso ele permaneça mais tempo do que ele agendou (“PAGAMENTO_ESTACIONAMENTO”). Por exemplo, um cliente reservou uma vaga de 10:00 às 11:00, porém ele saiu somente às 14:00. Logo, para evitarmos conflito, o pagamento será dividido em duas etapas.<br>
